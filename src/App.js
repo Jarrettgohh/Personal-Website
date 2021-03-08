@@ -23,16 +23,16 @@ function App() {
       </div>
       <div style={{ padding: 20 }}>
         <h1>About myself</h1>
-        <p style={{ fontSize: 18 }}>
+        <p style={{ fontSize: 20 }}>
           Hello! My name is Jarrett Goh and I am a student taking a course in
           engineering of Nanotechnology & Materials Science in Nanyang
           Polytechnic.
         </p>
-        <p style={{ fontSize: 18 }}>
+        <p style={{ fontSize: 20 }}>
           During my free time, I love playing sports such as Badminton,
           exercising and doing computer programming!
         </p>
-        <p style={{ fontSize: 18 }}>
+        <p style={{ fontSize: 20 }}>
           I got my love for programming during the first year of my studies in
           polytechnic, when I took computer programming as one of my modules. My
           programming language of interest includes Javascript for web/mobile
