@@ -90,7 +90,7 @@ function App() {
                         <FontAwesomeIcon
                           icon={faCheck}
                           color="lime"
-                          size="lg"
+                          size="md"
                         />
                       </Col>
                       <Col xs={11}>
@@ -104,7 +104,7 @@ function App() {
                         <FontAwesomeIcon
                           icon={faCheck}
                           color="lime"
-                          size="lg"
+                          size="md"
                         />
                       </Col>
                       <Col xs={11}>
@@ -118,7 +118,7 @@ function App() {
                         <FontAwesomeIcon
                           icon={faCheck}
                           color="lime"
-                          size="lg"
+                          size="md"
                         />
                       </Col>
                       <Col xs={11}>
@@ -132,7 +132,7 @@ function App() {
                         <FontAwesomeIcon
                           icon={faCheck}
                           color="lime"
-                          size="lg"
+                          size="md"
                         />
                       </Col>
                       <Col xs={11}>
@@ -150,7 +150,7 @@ function App() {
                         <FontAwesomeIcon
                           icon={faCheck}
                           color="lime"
-                          size="lg"
+                          size="md"
                         />
                       </Col>
                       <Col xs={11}>
@@ -164,7 +164,7 @@ function App() {
                         <FontAwesomeIcon
                           icon={faCheck}
                           color="lime"
-                          size="lg"
+                          size="md"
                         />
                       </Col>
                       <Col xs={11}>
@@ -178,7 +178,7 @@ function App() {
                         <FontAwesomeIcon
                           icon={faCheck}
                           color="lime"
-                          size="lg"
+                          size="md"
                         />
                       </Col>
                       <Col xs={11}>
@@ -192,12 +192,72 @@ function App() {
                         <FontAwesomeIcon
                           icon={faCheck}
                           color="lime"
-                          size="lg"
+                          size="md"
                         />
                       </Col>
                       <Col xs={11}>
                         <p className="text-style">
                           <strong>TensorFlow (Keras)</strong>
+                        </p>
+                      </Col>
+                    </Row>
+                  </Col>
+                  <Col>
+                    <p className="text-style-header-JS">AWS</p>
+
+                    <Row>
+                      <Col xs={1}>
+                        <FontAwesomeIcon
+                          icon={faCheck}
+                          color="lime"
+                          size="md"
+                        />
+                      </Col>
+                      <Col xs={11}>
+                        <p className="text-style">
+                          <strong>Amplify</strong>
+                        </p>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col xs={1}>
+                        <FontAwesomeIcon
+                          icon={faCheck}
+                          color="lime"
+                          size="md"
+                        />
+                      </Col>
+                      <Col xs={11}>
+                        <p className="text-style">
+                          <strong>Lambda Function</strong>
+                        </p>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col xs={1}>
+                        <FontAwesomeIcon
+                          icon={faCheck}
+                          color="lime"
+                          size="md"
+                        />
+                      </Col>
+                      <Col xs={11}>
+                        <p className="text-style">
+                          <strong>Websocket API Gateway</strong>
+                        </p>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col xs={1}>
+                        <FontAwesomeIcon
+                          icon={faCheck}
+                          color="lime"
+                          size="md"
+                        />
+                      </Col>
+                      <Col xs={11}>
+                        <p className="text-style">
+                          <strong>S3</strong>
                         </p>
                       </Col>
                     </Row>
