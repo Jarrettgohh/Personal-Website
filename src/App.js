@@ -8,7 +8,7 @@ import "./css/main.css";
 function App() {
   return (
     <React.Fragment>
-      <Container fluid style={{ width: "auto", height: "auto" }}>
+      <Container fluid>
         <Row
           className="justify-content-center"
           // noGutters={true}
@@ -19,7 +19,7 @@ function App() {
         >
           {/* Left top column */}
           <Col style={{ marginRight: 20 }}>
-            <Row xs={1} sm={2} md={4} lg={4} xl={4}>
+            <Row xs={1} sm={1} md={2} lg={2} xl={2}>
               <Col
                 // xs="auto"
                 // sm="auto"
@@ -29,7 +29,7 @@ function App() {
                 style={{
                   // minWidth: "auto",
                   // maxWidth: "25%",
-                  height: 100,
+                  height: 200,
                 }}
               >
                 <img
@@ -43,7 +43,6 @@ function App() {
                   }}
                 />
               </Col>
-
               <Col
                 // xs="auto"
                 // sm="auto"
@@ -53,53 +52,7 @@ function App() {
                 style={{
                   // minWidth: "auto",
                   // maxWidth: "25%",
-                  height: 100,
-                }}
-              >
-                <img
-                  src="React_logo.png"
-                  alt="ReactJs Logo"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "contain",
-                    overflow: "hidden",
-                  }}
-                />
-              </Col>
-              <Col
-                // xs="auto"
-                // sm="auto"
-                // md="auto"
-                // lg="auto"
-                // xl="auto"
-                style={{
-                  // minWidth: "auto",
-                  // maxWidth: "25%",
-                  height: 100,
-                }}
-              >
-                <img
-                  src="Node_logo.png"
-                  alt="NodeJs Logo"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "contain",
-                    overflow: "hidden",
-                  }}
-                />
-              </Col>
-              <Col
-                // xs="auto"
-                // sm="auto"
-                // md="auto"
-                // lg="auto"
-                // xl="auto"
-                style={{
-                  // minWidth: "auto",
-                  // maxWidth: "25%",
-                  height: 100,
+                  height: 200,
                 }}
               >
                 <img
@@ -123,30 +76,138 @@ function App() {
                 <Row style={{ margin: 10 }}>
                   <h4>
                     <i>
-                      Languages, Frameworks and Libraries used in my projects
+                      Languages, Frameworks, Libraries and Services used in my
+                      projects (Tech Stack)
                     </i>
                   </h4>
                 </Row>
-                <Row>
-                  <Col xs={1}>
-                    <FontAwesomeIcon icon={faCheck} color="lime" size="lg" />
+                <Row style={{ margin: 10 }}>
+                  <Col>
+                    <p className="text-style-header-JS">Javascript</p>
+
+                    <Row>
+                      <Col xs={1}>
+                        <FontAwesomeIcon
+                          icon={faCheck}
+                          color="lime"
+                          size="lg"
+                        />
+                      </Col>
+                      <Col xs={11}>
+                        <p className="text-style">
+                          <strong>React Js</strong>
+                        </p>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col xs={1}>
+                        <FontAwesomeIcon
+                          icon={faCheck}
+                          color="lime"
+                          size="lg"
+                        />
+                      </Col>
+                      <Col xs={11}>
+                        <p className="text-style">
+                          <strong>Node Js</strong>
+                        </p>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col xs={1}>
+                        <FontAwesomeIcon
+                          icon={faCheck}
+                          color="lime"
+                          size="lg"
+                        />
+                      </Col>
+                      <Col xs={11}>
+                        <p className="text-style">
+                          <strong>Bootstrap</strong>
+                        </p>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col xs={1}>
+                        <FontAwesomeIcon
+                          icon={faCheck}
+                          color="lime"
+                          size="lg"
+                        />
+                      </Col>
+                      <Col xs={11}>
+                        <p className="text-style">
+                          <strong>Express Js</strong>
+                        </p>
+                      </Col>
+                    </Row>
                   </Col>
-                  <Col xs={11}>
-                    <p className="text-style">
-                      <strong>Bootstrap</strong>
-                    </p>
+                  <Col>
+                    <p className="text-style-header-Python">Python</p>
+
+                    <Row>
+                      <Col xs={1}>
+                        <FontAwesomeIcon
+                          icon={faCheck}
+                          color="lime"
+                          size="lg"
+                        />
+                      </Col>
+                      <Col xs={11}>
+                        <p className="text-style">
+                          <strong>Requests</strong>
+                        </p>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col xs={1}>
+                        <FontAwesomeIcon
+                          icon={faCheck}
+                          color="lime"
+                          size="lg"
+                        />
+                      </Col>
+                      <Col xs={11}>
+                        <p className="text-style">
+                          <strong>Beautiful Soup (BS4)</strong>
+                        </p>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col xs={1}>
+                        <FontAwesomeIcon
+                          icon={faCheck}
+                          color="lime"
+                          size="lg"
+                        />
+                      </Col>
+                      <Col xs={11}>
+                        <p className="text-style">
+                          <strong>Selenium</strong>
+                        </p>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col xs={1}>
+                        <FontAwesomeIcon
+                          icon={faCheck}
+                          color="lime"
+                          size="lg"
+                        />
+                      </Col>
+                      <Col xs={11}>
+                        <p className="text-style">
+                          <strong>TensorFlow (Keras)</strong>
+                        </p>
+                      </Col>
+                    </Row>
                   </Col>
                 </Row>
-                <Row>
-                  <Col xs={1}>
-                    <FontAwesomeIcon icon={faCheck} color="lime" size="lg" />
-                  </Col>
-                  <Col xs={11}>
-                    <p className="text-style">
-                      <strong>Express.Js</strong>
-                    </p>
-                  </Col>
-                </Row>
+
+                {/* <Row style={{ margin: 10 }}>
+               
+                 
+                </Row> */}
               </Col>
             </Row>
           </Col>
