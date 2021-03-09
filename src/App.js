@@ -1,68 +1,161 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./css/main.css";
 
 function App() {
   return (
     <React.Fragment>
-      <Container fluid>
+      <Container fluid style={{ width: "auto", height: "auto" }}>
         <Row
-        // style={{
-        //   marginBottom: 80,
-        //   padding: 20,
-        // }}
+          className="justify-content-center"
+          // noGutters={true}
+          style={{
+            marginBottom: 80,
+            padding: 20,
+          }}
         >
-          <Col style={{ height: 100 }}>
-            <img
-              src="JS_logo.png"
-              alt="Javascript Logo"
-              style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "contain",
-                overflow: "hidden",
-              }}
-            />
+          {/* Left top column */}
+          <Col style={{ marginRight: 20 }}>
+            <Row xs={1} sm={2} md={4} lg={4} xl={4}>
+              <Col
+                // xs="auto"
+                // sm="auto"
+                // md="auto"
+                // lg="auto"
+                // xl="auto"
+                style={{
+                  // minWidth: "auto",
+                  // maxWidth: "25%",
+                  height: 100,
+                }}
+              >
+                <img
+                  src="JS_logo.png"
+                  alt="Javascript Logo"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
+                    overflow: "hidden",
+                  }}
+                />
+              </Col>
+
+              <Col
+                // xs="auto"
+                // sm="auto"
+                // md="auto"
+                // lg="auto"
+                // xl="auto"
+                style={{
+                  // minWidth: "auto",
+                  // maxWidth: "25%",
+                  height: 100,
+                }}
+              >
+                <img
+                  src="React_logo.png"
+                  alt="ReactJs Logo"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
+                    overflow: "hidden",
+                  }}
+                />
+              </Col>
+              <Col
+                // xs="auto"
+                // sm="auto"
+                // md="auto"
+                // lg="auto"
+                // xl="auto"
+                style={{
+                  // minWidth: "auto",
+                  // maxWidth: "25%",
+                  height: 100,
+                }}
+              >
+                <img
+                  src="Node_logo.png"
+                  alt="NodeJs Logo"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
+                    overflow: "hidden",
+                  }}
+                />
+              </Col>
+              <Col
+                // xs="auto"
+                // sm="auto"
+                // md="auto"
+                // lg="auto"
+                // xl="auto"
+                style={{
+                  // minWidth: "auto",
+                  // maxWidth: "25%",
+                  height: 100,
+                }}
+              >
+                <img
+                  src="Python_logo.png"
+                  alt="Python Logo"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
+                    overflow: "hidden",
+                  }}
+                />
+              </Col>
+            </Row>
           </Col>
-          <Col style={{ height: 100 }}>
-            <img
-              src="React_logo.png"
-              alt="ReactJs Logo"
-              style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "contain",
-                overflow: "hidden",
-              }}
-            />
-          </Col>
-          <Col style={{ height: 100 }}>
-            <img
-              src="Node_logo.png"
-              alt="NodeJs Logo"
-              style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "contain",
-                overflow: "hidden",
-              }}
-            />
-          </Col>
-          <Col style={{ height: 100 }}>
-            <img
-              src="Python_logo.png"
-              alt="Python Logo"
-              style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "contain",
-                overflow: "hidden",
-              }}
-            />
+
+          {/* Right top column */}
+          <Col style={{ marginLeft: 20 }}>
+            <Row>
+              <Col>
+                <Row style={{ margin: 10 }}>
+                  <h4>
+                    <i>
+                      Languages, Frameworks and Libraries used in my projects
+                    </i>
+                  </h4>
+                </Row>
+                <Row>
+                  <Col xs={1}>
+                    <FontAwesomeIcon icon={faCheck} color="lime" size="lg" />
+                  </Col>
+                  <Col xs={11}>
+                    <p className="text-style">
+                      <strong>Bootstrap</strong>
+                    </p>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col xs={1}>
+                    <FontAwesomeIcon icon={faCheck} color="lime" size="lg" />
+                  </Col>
+                  <Col xs={11}>
+                    <p className="text-style">
+                      <strong>Express.Js</strong>
+                    </p>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
           </Col>
         </Row>
       </Container>
+
+      <div style={{ padding: 20 }}>
+        <h1>Projects</h1>
+      </div>
 
       <div style={{ padding: 20 }}>
         <h1>About myself</h1>
