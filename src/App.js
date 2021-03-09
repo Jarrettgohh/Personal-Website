@@ -203,7 +203,7 @@ function App() {
                     </Row>
                   </Col>
                   <Col>
-                    <p className="text-style-header-JS">AWS</p>
+                    <p className="text-style-header-AWS">AWS</p>
 
                     <Row>
                       <Col xs={1}>
@@ -263,11 +263,6 @@ function App() {
                     </Row>
                   </Col>
                 </Row>
-
-                {/* <Row style={{ margin: 10 }}>
-               
-                 
-                </Row> */}
               </Col>
             </Row>
           </Col>
