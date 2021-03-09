@@ -1,38 +1,27 @@
 import React from "react";
+import "./css/main.css";
 
 function App() {
   return (
     <React.Fragment>
       <div style={{ marginBottom: 80, padding: 20 }}>
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png"
-          style={{ height: 120 }}
-        />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/320px-React-icon.svg.png"
-          style={{ height: 120 }}
-        />
-        <img
-          src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png"
-          style={{ height: 120 }}
-        />
-        <img
-          src="https://img.favpng.com/11/9/21/scalable-vector-graphics-javascript-python-logo-png-favpng-tKyB5ctiXpKLLQAf8tKx9kjyi.jpg"
-          style={{ height: 120 }}
-        />
+        <img src="JS_logo.png" alt="Javascript Logo" style={{ height: 120 }} />
+        <img src="React_logo.png" alt="ReactJs Logo" style={{ height: 120 }} />
+        <img src="Node_logo.png" alt="NodeJs Logo" style={{ height: 120 }} />
+        <img src="Python_logo.png" alt="Python Logo" style={{ height: 120 }} />
       </div>
       <div style={{ padding: 20 }}>
         <h1>About myself</h1>
-        <p style={{ fontSize: 20 }}>
+        <p className="text-style">
           Hello! My name is Jarrett Goh and I am a student taking a course in
           engineering of Nanotechnology & Materials Science in Nanyang
           Polytechnic.
         </p>
-        <p style={{ fontSize: 20 }}>
+        <p className="text-style">
           During my free time, I love playing sports such as Badminton,
           exercising and doing computer programming!
         </p>
-        <p style={{ fontSize: 20 }}>
+        <p className="text-style">
           I got my love for programming during the first year of my studies in
           polytechnic, when I took computer programming as one of my modules. My
           programming language of interest includes Javascript for web/mobile
@@ -42,7 +31,7 @@ function App() {
         </p>
       </div>
       <div style={{ padding: 20 }}>
-        <h1 style={{ fontSize: 30 }}>Citations for images used</h1>
+        <h1>Citations for images used</h1>
         <p style={{ fontSize: 18 }}>
           https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png
           (Javascript logo)
