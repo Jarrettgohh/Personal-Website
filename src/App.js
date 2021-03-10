@@ -124,48 +124,67 @@ function App() {
         </Row>
       </Container>
 
-      <div>
-        <div style={{ paddingLeft: 20, paddingTop: 20 }}>
-          <h1>Projects</h1>
-        </div>
+      <Container fluid>
+        <div>
+          <div style={{ paddingLeft: 20, paddingTop: 20 }}>
+            <h1>Projects</h1>
+          </div>
 
-        <Row
-          style={{
-            margin: "0.4rem",
-            justifyContent: "center",
-          }}
-          xs={1}
-          sm={2}
-          md={2}
-          lg={3}
-          xl={4}
-        >
-          <Col
+          <Row
+            className="justify-content-center"
             style={{
-              margin: "1rem",
-              backgroundColor: "whitesmoke",
-              height: 300,
-              borderRadius: "1.2rem",
+              margin: "0.4rem",
             }}
-          ></Col>
-          <Col
-            style={{
-              margin: "1rem",
-              backgroundColor: "whitesmoke",
-              height: 300,
-              borderRadius: "1.2rem",
-            }}
-          ></Col>
-          <Col
-            style={{
-              margin: "1rem",
-              backgroundColor: "whitesmoke",
-              height: 300,
-              borderRadius: "1.2rem",
-            }}
-          ></Col>
-        </Row>
-      </div>
+            xs={1}
+            sm={1}
+            md={3}
+            lg={4}
+            xl={5}
+            noGutters={true}
+          >
+            <Col
+              style={{
+                margin: "1rem",
+                backgroundColor: "whitesmoke",
+                height: 240,
+                borderRadius: "1.2rem",
+              }}
+            ></Col>
+            <Col
+              style={{
+                margin: "1rem",
+                backgroundColor: "whitesmoke",
+                height: 240,
+                borderRadius: "1.2rem",
+              }}
+            ></Col>
+            <Col
+              style={{
+                margin: "1rem",
+                backgroundColor: "whitesmoke",
+                height: 240,
+                borderRadius: "1.2rem",
+              }}
+            ></Col>
+            <Col
+              style={{
+                margin: "1rem",
+                backgroundColor: "whitesmoke",
+                height: 240,
+                borderRadius: "1.2rem",
+              }}
+            ></Col>
+            <Col
+              style={{
+                margin: "1rem",
+                backgroundColor: "whitesmoke",
+                height: 240,
+                borderRadius: "1.2rem",
+              }}
+            ></Col>
+          </Row>
+        </div>
+      </Container>
 
       <div style={{ padding: 20 }}>
         <Row>
