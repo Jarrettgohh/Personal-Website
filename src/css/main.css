@@ -43,3 +43,88 @@
 .project-card:hover {
   border: 0.1rem solid silver;
 }
+
+/* .container-style {
+  width: auto;
+  height: auto;
+} */
+
+/* In creating event, make a fix shape the user is allowed to crop into for the event pic */
+
+.image-style {
+  flex: 1;
+  min-height: 11rem;
+  min-width: 10rem;
+  max-height: 11rem;
+  max-width: 10rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border: 0.2px solid silver;
+}
+
+/* class not working for content-col */
+
+.content-col {
+  padding-left: 2rem;
+  width: 30rem;
+  height: auto;
+}
+
+.event-name-font {
+  font-family: "Candara";
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+
+.event-time-date-row {
+  color: gray;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.event-time-date-font {
+  font-size: 1.1rem;
+  font-family: "Candara";
+}
+
+.event-tag-row {
+  color: #e1805c;
+  padding-top: 0.5rem;
+}
+
+.event-tag-icon {
+  padding-right: 0.2rem;
+  font-size: 1.5rem;
+  border-right: 0.16rem solid #e1805c;
+}
+
+.event-tag-name {
+  font-size: 0.92rem;
+  padding-left: 0.2rem;
+  white-space: pre;
+  font-family: "Chewy";
+}
+
+.display-list {
+  padding: 0;
+  border-radius: 3vh;
+  background-color: white;
+
+  /* Prevent bug of text overflowing to bottom */
+
+  max-height: 11rem;
+  min-width: 23rem;
+
+  /* box-shadow: 0 6px 10px rgba(56, 125, 255, 0.17); */
+  /* box-shadow: 0 0 1vw lightslategray; */
+  margin: 4vh;
+  transition: 0.5s;
+}
+
+.display-list:hover {
+  /* box-shadow: 0 0 10px lightslategray; */
+  transition: 0.5s;
+  background-color: whitesmoke;
+}

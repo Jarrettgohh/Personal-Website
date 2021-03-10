@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { Container, Row, Col, Image } from "react-bootstrap";
+import { faStar, faTrophy } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import TechStackCol from "./components/techStackCol";
@@ -18,6 +18,37 @@ function App() {
     "Websocket API Gateway",
     "Lambda Functions",
     "S3",
+  ];
+
+  const testEventData = [
+    {
+      id: 1,
+      name: "Test",
+      startDateTime: "3:03",
+      endDateTime: "5:03",
+      tagId: "Sports",
+    },
+    {
+      id: 1,
+      name: "Test",
+      startDateTime: "3:03",
+      endDateTime: "5:03",
+      tagId: "Sports",
+    },
+    {
+      id: 1,
+      name: "Test",
+      startDateTime: "3:03",
+      endDateTime: "5:03",
+      tagId: "Sports",
+    },
+    {
+      id: 1,
+      name: "Test",
+      startDateTime: "3:03",
+      endDateTime: "5:03",
+      tagId: "Sports",
+    },
   ];
 
   return (
@@ -107,7 +138,7 @@ function App() {
         </Row>
       </Container>
 
-      <Container fluid>
+      {/* <Container fluid>
         <div>
           <div style={{ paddingLeft: 20, paddingTop: 20 }}>
             <h1>Projects</h1>
@@ -123,7 +154,19 @@ function App() {
             noGutters={true}
           >
             <Col>
-              <Row className="project-card"></Row>
+              <Row className="project-card">
+                <Col style={{ backgroundColor: "gray" }}>
+                  <Image
+                    // style={{ flex: 1 }}
+                    // className="image-style"
+
+                    src="https://phillipbrande.files.wordpress.com/2013/10/random-pic-14.jpg"
+                    fluid
+                    rounded
+                  />
+                </Col>
+                <Col style={{ backgroundColor: "whitesmoke" }}></Col>
+              </Row>
             </Col>
             <Col>
               <Row className="project-card"></Row>
@@ -139,6 +182,66 @@ function App() {
             </Col>
           </Row>
         </div>
+      </Container> */}
+
+      <Container fluid className="container-style">
+        <Row
+          xs={2}
+          sm={2}
+          md={3}
+          lg={3}
+          xl={4}
+          className="justify-content-center"
+          noGutters={true}
+        >
+          {testEventData.map((event) => {
+            // const tag = tagData.filter((tag) => tag.id === event.tag._id)[0];
+
+            return (
+              <Col
+                key={event._id}
+                className="display-list"
+                // xs="auto"
+                // sm="auto"
+              >
+                <Row noGutters={true}>
+                  <Col>
+                    <Image
+                      className="image-style"
+                      resizemode="contain"
+                      src="Web-Crawler.png"
+                      fluid
+                    />
+                  </Col>
+
+                  <Col className="content-col">
+                    <Row noGutters={true}>
+                      <h4 className="event-name-font">{event.name}</h4>
+                    </Row>
+                    {""}
+                    <Row className="event-time-date-row" noGutters={true}>
+                      <h6 className="event-time-date-font">
+                        <i>{`${event.startDateTime}, ${event.endDateTime}`}</i>
+                      </h6>
+                    </Row>
+                    {""}
+                    <Row className="event-tag-row" noGutters={true}>
+                      <FontAwesomeIcon
+                        icon={
+                          //tag.icon
+                          faTrophy
+                        }
+                        className="event-tag-icon"
+                      />
+                      <h6 className="event-tag-name">{event.tagId}</h6>
+                    </Row>
+                    {""}
+                  </Col>
+                </Row>
+              </Col>
+            );
+          })}
+        </Row>
       </Container>
 
       <div style={{ padding: 20 }}>
