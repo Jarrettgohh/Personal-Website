@@ -7,7 +7,7 @@ const TechStackColItems = ({ techStack }) => {
   return (
     <Row>
       <Col xs={2} xl={2}>
-        <FontAwesomeIcon icon={faCheck} color="lime" size="md" />
+        <FontAwesomeIcon icon={faCheck} color="lime" />
       </Col>
       <Col xs={10} xl={10}>
         <p className="text-style">

@@ -9,8 +9,8 @@ const TechStackCol = ({ tech, styleExt, techStack }) => {
       {/* styleExt => JS for Javascript, Py for Python and AWS for AWS */}
       <p className={`text-style-header-${styleExt}`}>{tech}</p>
 
-      {techStack.map((stack) => {
-        return <TechStackColItems techStack={stack} />;
+      {techStack.map((stack, index) => {
+        return <TechStackColItems techStack={stack} key={index} />;
       })}
     </Col>
   );

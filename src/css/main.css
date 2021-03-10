@@ -35,6 +35,9 @@
   background-color: whitesmoke;
   height: 16rem;
   border-radius: 1.2rem;
+
+  /* max-height: 11rem;
+  min-width: 23rem; */
 }
 
 .project-card:hover {

@@ -114,11 +114,11 @@ function App() {
           </div>
 
           <Row
-            className="justify-content-center"
+            style={{ margin: 0, padding: 0 }}
             xs={1}
             sm={2}
             md={3}
-            lg={4}
+            lg={3}
             xl={4}
             noGutters={true}
           >
