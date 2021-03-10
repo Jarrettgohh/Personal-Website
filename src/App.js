@@ -1,5 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import TechStackCol from "./components/techStackCol";
 import "./css/main.css";
@@ -122,23 +124,69 @@ function App() {
         </Row>
       </Container>
 
-      <div style={{ padding: 20 }}>
-        <h1>Projects</h1>
+      <div>
+        <div style={{ paddingLeft: 20, paddingTop: 20 }}>
+          <h1>Projects</h1>
+        </div>
+
+        <Row
+          style={{
+            margin: "0.4rem",
+            justifyContent: "center",
+          }}
+          xs={1}
+          sm={2}
+          md={2}
+          lg={3}
+          xl={4}
+        >
+          <Col
+            style={{
+              margin: "1rem",
+              backgroundColor: "whitesmoke",
+              height: 300,
+              borderRadius: "1.2rem",
+            }}
+          ></Col>
+          <Col
+            style={{
+              margin: "1rem",
+              backgroundColor: "whitesmoke",
+              height: 300,
+              borderRadius: "1.2rem",
+            }}
+          ></Col>
+          <Col
+            style={{
+              margin: "1rem",
+              backgroundColor: "whitesmoke",
+              height: 300,
+              borderRadius: "1.2rem",
+            }}
+          ></Col>
+        </Row>
       </div>
 
       <div style={{ padding: 20 }}>
-        <h1>Skills Learnt</h1>
-
-        <p>
-          <ul>
-            <li>Responsive Design (Bootstrap)</li>
-            <li>Reusable Components</li>
-            <li>Clean Code Syntax</li>
-            <li>Debugging Skills</li>
-            <li>Git Workflows</li>
-            <li>NPM</li>
-          </ul>
-        </p>
+        <Row>
+          <FontAwesomeIcon icon={faStar} color="green" />
+          <h1>Skills Learnt</h1>
+        </Row>
+        <Row>
+          <p>
+            <ul>
+              <li>Web Design (Cascading Style Sheets)</li>
+              <li>Responsive Design (Bootstrap)</li>
+              <li>Reusable Components</li>
+              <li>Clean Code Syntax</li>
+              <li>Basic Web Security</li>
+              <li>Debugging Skills</li>
+              <li>Git Workflows</li>
+              <li>NPM</li>
+              <li>PIP</li>
+            </ul>
+          </p>
+        </Row>
       </div>
 
       <div style={{ padding: 20 }}>
