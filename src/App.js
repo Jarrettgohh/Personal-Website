@@ -1,7 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import { faStar, faTrophy } from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { GradeOutlined } from "@material-ui/icons";
 
 import TechStackCol from "./components/techStackCol";
 import "./css/main.css";
@@ -23,27 +24,36 @@ function App() {
   const testEventData = [
     {
       id: 1,
+      name: "onePA Badminton Courts Automation",
+      startDateTime: "3:03",
+      endDateTime: "5:03",
+      tagId: "Sports",
+      src: "Web-Crawler.png",
+    },
+    {
+      id: 2,
+      name: "Test",
+      startDateTime: "3:03",
+      endDateTime: "5:03",
+      tagId: "Sports",
+      src: "Map.png",
+    },
+    {
+      id: 3,
       name: "Test",
       startDateTime: "3:03",
       endDateTime: "5:03",
       tagId: "Sports",
     },
     {
-      id: 1,
+      id: 4,
       name: "Test",
       startDateTime: "3:03",
       endDateTime: "5:03",
       tagId: "Sports",
     },
     {
-      id: 1,
-      name: "Test",
-      startDateTime: "3:03",
-      endDateTime: "5:03",
-      tagId: "Sports",
-    },
-    {
-      id: 1,
+      id: 5,
       name: "Test",
       startDateTime: "3:03",
       endDateTime: "5:03",
@@ -138,52 +148,6 @@ function App() {
         </Row>
       </Container>
 
-      {/* <Container fluid>
-        <div>
-          <div style={{ paddingLeft: 20, paddingTop: 20 }}>
-            <h1>Projects</h1>
-          </div>
-
-          <Row
-            style={{ margin: 0, padding: 0 }}
-            xs={1}
-            sm={2}
-            md={3}
-            lg={3}
-            xl={4}
-            noGutters={true}
-          >
-            <Col>
-              <Row className="project-card">
-                <Col style={{ backgroundColor: "gray" }}>
-                  <Image
-                    // style={{ flex: 1 }}
-                    // className="image-style"
-
-                    src="https://phillipbrande.files.wordpress.com/2013/10/random-pic-14.jpg"
-                    fluid
-                    rounded
-                  />
-                </Col>
-                <Col style={{ backgroundColor: "whitesmoke" }}></Col>
-              </Row>
-            </Col>
-            <Col>
-              <Row className="project-card"></Row>
-            </Col>
-            <Col>
-              <Row className="project-card"></Row>
-            </Col>
-            <Col cl>
-              <Row className="project-card"></Row>
-            </Col>
-            <Col>
-              <Row className="project-card"></Row>
-            </Col>
-          </Row>
-        </div>
-      </Container> */}
-
       <Container fluid className="container-style">
         <Row
           xs={2}
@@ -195,47 +159,19 @@ function App() {
           noGutters={true}
         >
           {testEventData.map((event) => {
-            // const tag = tagData.filter((tag) => tag.id === event.tag._id)[0];
-
             return (
-              <Col
-                key={event._id}
-                className="display-list"
-                // xs="auto"
-                // sm="auto"
-              >
+              <Col key={event.id} className="project-card">
                 <Row noGutters={true}>
                   <Col>
-                    <Image
-                      className="image-style"
-                      resizemode="contain"
-                      src="Web-Crawler.png"
-                      fluid
-                    />
+                    <Image className="project-image" src={event.src} fluid />
                   </Col>
-
-                  <Col className="content-col">
-                    <Row noGutters={true}>
-                      <h4 className="event-name-font">{event.name}</h4>
+                  <Col>
+                    <Row style={{ margin: 6 }}>
+                      <h4 className="project-name-font">{event.name}</h4>
                     </Row>
-                    {""}
-                    <Row className="event-time-date-row" noGutters={true}>
-                      <h6 className="event-time-date-font">
-                        <i>{`${event.startDateTime}, ${event.endDateTime}`}</i>
-                      </h6>
-                    </Row>
-                    {""}
-                    <Row className="event-tag-row" noGutters={true}>
-                      <FontAwesomeIcon
-                        icon={
-                          //tag.icon
-                          faTrophy
-                        }
-                        className="event-tag-icon"
-                      />
-                      <h6 className="event-tag-name">{event.tagId}</h6>
-                    </Row>
-                    {""}
+                    {/* <Row>
+                      <GradeOutlined style={{ fill: "#FADD08" }} />
+                    </Row> */}
                   </Col>
                 </Row>
               </Col>
@@ -250,21 +186,17 @@ function App() {
           <h1>Skills Learnt</h1>
         </Row>
         <Row>
-          <p>
-            <ul>
-              <li className="text-style">
-                Web Design (Cascading Style Sheets)
-              </li>
-              <li className="text-style">Responsive Design (Bootstrap)</li>
-              <li className="text-style">Reusable Components</li>
-              <li className="text-style">Clean Code Syntax</li>
-              <li className="text-style">Basic Web Security</li>
-              <li className="text-style">Debugging Skills</li>
-              <li className="text-style">Git Workflows</li>
-              <li className="text-style">NPM</li>
-              <li className="text-style">PIP</li>
-            </ul>
-          </p>
+          <ul>
+            <li className="text-style">Web Design (Cascading Style Sheets)</li>
+            <li className="text-style">Responsive Design (Bootstrap)</li>
+            <li className="text-style">Reusable Components</li>
+            <li className="text-style">Clean Code Syntax</li>
+            <li className="text-style">Basic Web Security</li>
+            <li className="text-style">Debugging Skills</li>
+            <li className="text-style">Git Workflows</li>
+            <li className="text-style">NPM</li>
+            <li className="text-style">PIP</li>
+          </ul>
         </Row>
       </div>
 
