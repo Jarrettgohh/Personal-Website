@@ -29,3 +29,13 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.project-card {
+  margin: 1rem;
+  background-color: whitesmoke;
+  height: 16rem;
+  border-radius: 1.2rem;
+}
+.project-card:hover {
+  border: 0.1rem solid silver;
+}

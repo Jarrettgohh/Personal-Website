@@ -142,46 +142,11 @@ function App() {
             xl={5}
             noGutters={true}
           >
-            <Col
-              style={{
-                margin: "1rem",
-                backgroundColor: "whitesmoke",
-                height: 240,
-                borderRadius: "1.2rem",
-              }}
-            ></Col>
-            <Col
-              style={{
-                margin: "1rem",
-                backgroundColor: "whitesmoke",
-                height: 240,
-                borderRadius: "1.2rem",
-              }}
-            ></Col>
-            <Col
-              style={{
-                margin: "1rem",
-                backgroundColor: "whitesmoke",
-                height: 240,
-                borderRadius: "1.2rem",
-              }}
-            ></Col>
-            <Col
-              style={{
-                margin: "1rem",
-                backgroundColor: "whitesmoke",
-                height: 240,
-                borderRadius: "1.2rem",
-              }}
-            ></Col>
-            <Col
-              style={{
-                margin: "1rem",
-                backgroundColor: "whitesmoke",
-                height: 240,
-                borderRadius: "1.2rem",
-              }}
-            ></Col>
+            <Col className="project-card"></Col>
+            <Col className="project-card"></Col>
+            <Col className="project-card"></Col>
+            <Col className="project-card"></Col>
+            <Col className="project-card"></Col>
           </Row>
         </div>
       </Container>
@@ -194,15 +159,17 @@ function App() {
         <Row>
           <p>
             <ul>
-              <li>Web Design (Cascading Style Sheets)</li>
-              <li>Responsive Design (Bootstrap)</li>
-              <li>Reusable Components</li>
-              <li>Clean Code Syntax</li>
-              <li>Basic Web Security</li>
-              <li>Debugging Skills</li>
-              <li>Git Workflows</li>
-              <li>NPM</li>
-              <li>PIP</li>
+              <li className="text-style">
+                Web Design (Cascading Style Sheets)
+              </li>
+              <li className="text-style">Responsive Design (Bootstrap)</li>
+              <li className="text-style">Reusable Components</li>
+              <li className="text-style">Clean Code Syntax</li>
+              <li className="text-style">Basic Web Security</li>
+              <li className="text-style">Debugging Skills</li>
+              <li className="text-style">Git Workflows</li>
+              <li className="text-style">NPM</li>
+              <li className="text-style">PIP</li>
             </ul>
           </p>
         </Row>
