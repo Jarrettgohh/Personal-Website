@@ -3,23 +3,43 @@ import { Container, Row, Col } from "react-bootstrap";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import TechStackCol from "./components/techStackCol";
 import "./css/main.css";
 
 function App() {
+  const techStackJS = ["React Js", "Node Js", "Bootstrap", "Express Js"];
+  const techStackPy = [
+    "Requests",
+    "Beautiful Soup (BS4)",
+    "TensorFlow (Keras)",
+  ];
+  const techStackAWS = [
+    "Amplify",
+    "Websocket API Gateway",
+    "Lambda Functions",
+    "S3",
+  ];
+
   return (
     <React.Fragment>
-      <Container fluid>
+      <Container fluid style={{ padding: 0 }}>
         <Row
+          xs={1}
+          xs={1}
+          sm={1}
+          md={1}
+          lg={2}
+          xl={2}
           className="justify-content-center"
-          // noGutters={true}
+          noGutters={true}
           style={{
             marginBottom: 80,
             padding: 20,
           }}
         >
           {/* Left top column */}
-          <Col style={{ marginRight: 20 }}>
-            <Row xs={1} sm={1} md={2} lg={2} xl={2}>
+          <Col>
+            <Row xs={2} sm={2} md={2} lg={1} xl={2}>
               <Col
                 // xs="auto"
                 // sm="auto"
@@ -29,6 +49,7 @@ function App() {
                 style={{
                   // minWidth: "auto",
                   // maxWidth: "25%",
+                  // margin: 10,
                   height: 200,
                 }}
               >
@@ -52,6 +73,7 @@ function App() {
                 style={{
                   // minWidth: "auto",
                   // maxWidth: "25%",
+                  // margin: 10,
                   height: 200,
                 }}
               >
@@ -70,10 +92,10 @@ function App() {
           </Col>
 
           {/* Right top column */}
-          <Col style={{ marginLeft: 20 }}>
+          <Col>
             <Row>
               <Col>
-                <Row style={{ margin: 10 }}>
+                <Row style={{ margin: 20, marginTop: 40 }}>
                   <h4>
                     <i>
                       Languages, Frameworks, Libraries and Services used in my
@@ -82,186 +104,21 @@ function App() {
                   </h4>
                 </Row>
                 <Row style={{ margin: 10 }}>
-                  <Col>
-                    <p className="text-style-header-JS">Javascript</p>
-
-                    <Row>
-                      <Col xs={1}>
-                        <FontAwesomeIcon
-                          icon={faCheck}
-                          color="lime"
-                          size="md"
-                        />
-                      </Col>
-                      <Col xs={11}>
-                        <p className="text-style">
-                          <strong>React Js</strong>
-                        </p>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col xs={1}>
-                        <FontAwesomeIcon
-                          icon={faCheck}
-                          color="lime"
-                          size="md"
-                        />
-                      </Col>
-                      <Col xs={11}>
-                        <p className="text-style">
-                          <strong>Node Js</strong>
-                        </p>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col xs={1}>
-                        <FontAwesomeIcon
-                          icon={faCheck}
-                          color="lime"
-                          size="md"
-                        />
-                      </Col>
-                      <Col xs={11}>
-                        <p className="text-style">
-                          <strong>Bootstrap</strong>
-                        </p>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col xs={1}>
-                        <FontAwesomeIcon
-                          icon={faCheck}
-                          color="lime"
-                          size="md"
-                        />
-                      </Col>
-                      <Col xs={11}>
-                        <p className="text-style">
-                          <strong>Express Js</strong>
-                        </p>
-                      </Col>
-                    </Row>
-                  </Col>
-                  <Col>
-                    <p className="text-style-header-Python">Python</p>
-
-                    <Row>
-                      <Col xs={1}>
-                        <FontAwesomeIcon
-                          icon={faCheck}
-                          color="lime"
-                          size="md"
-                        />
-                      </Col>
-                      <Col xs={11}>
-                        <p className="text-style">
-                          <strong>Requests</strong>
-                        </p>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col xs={1}>
-                        <FontAwesomeIcon
-                          icon={faCheck}
-                          color="lime"
-                          size="md"
-                        />
-                      </Col>
-                      <Col xs={11}>
-                        <p className="text-style">
-                          <strong>Beautiful Soup (BS4)</strong>
-                        </p>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col xs={1}>
-                        <FontAwesomeIcon
-                          icon={faCheck}
-                          color="lime"
-                          size="md"
-                        />
-                      </Col>
-                      <Col xs={11}>
-                        <p className="text-style">
-                          <strong>Selenium</strong>
-                        </p>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col xs={1}>
-                        <FontAwesomeIcon
-                          icon={faCheck}
-                          color="lime"
-                          size="md"
-                        />
-                      </Col>
-                      <Col xs={11}>
-                        <p className="text-style">
-                          <strong>TensorFlow (Keras)</strong>
-                        </p>
-                      </Col>
-                    </Row>
-                  </Col>
-                  <Col>
-                    <p className="text-style-header-AWS">AWS</p>
-
-                    <Row>
-                      <Col xs={1}>
-                        <FontAwesomeIcon
-                          icon={faCheck}
-                          color="lime"
-                          size="md"
-                        />
-                      </Col>
-                      <Col xs={11}>
-                        <p className="text-style">
-                          <strong>Amplify</strong>
-                        </p>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col xs={1}>
-                        <FontAwesomeIcon
-                          icon={faCheck}
-                          color="lime"
-                          size="md"
-                        />
-                      </Col>
-                      <Col xs={11}>
-                        <p className="text-style">
-                          <strong>Lambda Function</strong>
-                        </p>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col xs={1}>
-                        <FontAwesomeIcon
-                          icon={faCheck}
-                          color="lime"
-                          size="md"
-                        />
-                      </Col>
-                      <Col xs={11}>
-                        <p className="text-style">
-                          <strong>Websocket API Gateway</strong>
-                        </p>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col xs={1}>
-                        <FontAwesomeIcon
-                          icon={faCheck}
-                          color="lime"
-                          size="md"
-                        />
-                      </Col>
-                      <Col xs={11}>
-                        <p className="text-style">
-                          <strong>S3</strong>
-                        </p>
-                      </Col>
-                    </Row>
-                  </Col>
+                  <TechStackCol
+                    tech="Javascript"
+                    styleExt="JS"
+                    techStack={techStackJS}
+                  />
+                  <TechStackCol
+                    tech="Python"
+                    styleExt="Py"
+                    techStack={techStackPy}
+                  />
+                  <TechStackCol
+                    tech="AWS"
+                    styleExt="AWS"
+                    techStack={techStackAWS}
+                  />
                 </Row>
               </Col>
             </Row>
