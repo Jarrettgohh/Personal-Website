@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar, faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { GradeOutlined } from "@material-ui/icons";
 
@@ -169,9 +169,29 @@ function App() {
                     <Row style={{ margin: 6 }}>
                       <h4 className="project-name-font">{event.name}</h4>
                     </Row>
-                    {/* <Row>
-                      <GradeOutlined style={{ fill: "#FADD08" }} />
-                    </Row> */}
+                    <Row style={{ height: "2rem" }}>
+                      <GradeOutlined
+                        style={{ fill: "#FADD08", fontSize: "1.8rem" }}
+                      />
+
+                      <p style={{ fontSize: "1.2rem" }}>Python</p>
+                    </Row>
+                    <Row style={{ height: "2rem" }}>
+                      <FontAwesomeIcon
+                        icon={faCheck}
+                        color="lime"
+                        style={{ margin: 10 }}
+                      />
+                      <p style={{ fontSize: "1rem" }}>Requests</p>
+                    </Row>
+                    <Row style={{ height: "2rem" }}>
+                      <FontAwesomeIcon
+                        icon={faCheck}
+                        color="lime"
+                        style={{ margin: 10 }}
+                      />
+                      <p style={{ fontSize: "1rem" }}>BS4</p>
+                    </Row>
                   </Col>
                 </Row>
               </Col>

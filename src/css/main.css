@@ -64,4 +64,6 @@
 .project-name-font {
   font-family: Candara;
   font-weight: bold;
+  /* font-size: 14px; */
+  font-size: 1.2rem;
 }
