@@ -1,7 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import TechStackCol from "./components/techStackCol";
 import "./css/main.css";
@@ -22,6 +20,8 @@ function App() {
 
   return (
     <React.Fragment>
+      <div>Top Navbar with link to Github, Stackoverflow and NPM account</div>
+
       <Container fluid style={{ padding: 0 }}>
         <Row
           xs={1}
@@ -30,12 +30,8 @@ function App() {
           md={1}
           lg={2}
           xl={2}
-          className="justify-content-center"
-          noGutters={true}
-          style={{
-            marginBottom: 80,
-            padding: 20,
-          }}
+          className="top-row justify-content-center"
+          // noGutters={true}
         >
           {/* Left top column */}
           <Col>
@@ -128,6 +124,21 @@ function App() {
 
       <div style={{ padding: 20 }}>
         <h1>Projects</h1>
+      </div>
+
+      <div style={{ padding: 20 }}>
+        <h1>Skills Learnt</h1>
+
+        <p>
+          <ul>
+            <li>Responsive Design (Bootstrap)</li>
+            <li>Reusable Components</li>
+            <li>Clean Code Syntax</li>
+            <li>Debugging Skills</li>
+            <li>Git Workflows</li>
+            <li>NPM</li>
+          </ul>
+        </p>
       </div>
 
       <div style={{ padding: 20 }}>

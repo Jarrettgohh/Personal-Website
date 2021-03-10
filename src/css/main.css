@@ -1,3 +1,10 @@
+.top-row {
+  margin: 1.4rem;
+  padding: 20;
+  background-color: whitesmoke;
+  border-radius: 2rem;
+}
+
 .text-style {
   font-size: 1.2rem;
 }
