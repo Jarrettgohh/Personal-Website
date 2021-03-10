@@ -27,7 +27,6 @@ function App() {
       <Container fluid style={{ padding: 0 }}>
         <Row
           xs={1}
-          xs={1}
           sm={1}
           md={1}
           lg={2}
@@ -39,15 +38,7 @@ function App() {
           <Col>
             <Row xs={2} sm={2} md={2} lg={1} xl={2}>
               <Col
-                // xs="auto"
-                // sm="auto"
-                // md="auto"
-                // lg="auto"
-                // xl="auto"
                 style={{
-                  // minWidth: "auto",
-                  // maxWidth: "25%",
-                  // margin: 10,
                   height: 200,
                 }}
               >
@@ -63,15 +54,7 @@ function App() {
                 />
               </Col>
               <Col
-                // xs="auto"
-                // sm="auto"
-                // md="auto"
-                // lg="auto"
-                // xl="auto"
                 style={{
-                  // minWidth: "auto",
-                  // maxWidth: "25%",
-                  // margin: 10,
                   height: 200,
                 }}
               >
@@ -132,21 +115,28 @@ function App() {
 
           <Row
             className="justify-content-center"
-            style={{
-              margin: "0.4rem",
-            }}
             xs={1}
-            sm={1}
+            sm={2}
             md={3}
             lg={4}
-            xl={5}
+            xl={4}
             noGutters={true}
           >
-            <Col className="project-card"></Col>
-            <Col className="project-card"></Col>
-            <Col className="project-card"></Col>
-            <Col className="project-card"></Col>
-            <Col className="project-card"></Col>
+            <Col>
+              <Row className="project-card"></Row>
+            </Col>
+            <Col>
+              <Row className="project-card"></Row>
+            </Col>
+            <Col>
+              <Row className="project-card"></Row>
+            </Col>
+            <Col cl>
+              <Row className="project-card"></Row>
+            </Col>
+            <Col>
+              <Row className="project-card"></Row>
+            </Col>
           </Row>
         </div>
       </Container>
