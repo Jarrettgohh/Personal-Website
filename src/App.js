@@ -1,6 +1,7 @@
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
-import { faStar, faCheck } from "@fortawesome/free-solid-svg-icons";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { FaGit, FaGithub } from "react-icons/fa";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { GradeOutlined } from "@material-ui/icons";
 
@@ -149,53 +150,47 @@ function App() {
         </Row>
       </Container>
 
-      <Container fluid className="container-style">
-        <Row
-          xs={2}
-          sm={2}
-          md={3}
-          lg={3}
-          xl={4}
-          className="justify-content-center"
-          noGutters={true}
-        >
-          {testEventData.map((event) => {
+      <Container fluid>
+        <Row xs={1} sm={2} md={2} lg={3} xl={4}>
+          {testEventData.map((data) => {
             return (
-              <Col key={event.id} className="project-card">
-                <Row noGutters={true}>
-                  <Col>
-                    <Image className="project-image" src={event.src} fluid />
-                  </Col>
-                  <Col>
-                    <Row style={{ margin: 6 }}>
-                      <h4 className="project-name-font">{event.name}</h4>
-                    </Row>
-                    <Row style={{ height: "2rem" }}>
-                      <GradeOutlined
-                        style={{ fill: "#FADD08", fontSize: "1.8rem" }}
-                      />
+              // Double Card components for the margin spacing effect without losing responsive orientation
+              <Card style={{ border: "none" }}>
+                <Card
+                  style={{
+                    flex: 1,
+                    margin: 10,
+                  }}
+                >
+                  <Card.Img
+                    variant="top"
+                    src={data.src}
+                    style={{
+                      width: "12rem",
+                      height: "12rem",
+                      alignSelf: "center",
+                    }}
+                  />
+                  <Card.Body>
+                    <Card.Title style={{ fontWeight: "bold" }}>
+                      {data.name}
+                    </Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
 
-                      <p style={{ fontSize: "1.2rem" }}>Python</p>
-                    </Row>
-                    <Row style={{ height: "2rem" }}>
-                      <FontAwesomeIcon
-                        icon={faCheck}
-                        color="lime"
-                        style={{ margin: 10 }}
-                      />
-                      <p style={{ fontSize: "1rem" }}>Requests</p>
-                    </Row>
-                    <Row style={{ height: "2rem" }}>
-                      <FontAwesomeIcon
-                        icon={faCheck}
-                        color="lime"
-                        style={{ margin: 10 }}
-                      />
-                      <p style={{ fontSize: "1rem" }}>BS4</p>
-                    </Row>
-                  </Col>
-                </Row>
-              </Col>
+                    <FaGithub size="1.4rem" />
+                    <a
+                      target="_blank"
+                      href="https://github.com/Jarrettgohh/Onepa-Badminton-Courts-Finder-Python"
+                      style={{ color: "tomato", marginLeft: 10 }}
+                    >
+                      Source Code
+                    </a>
+                  </Card.Body>
+                </Card>
+              </Card>
             );
           })}
         </Row>
