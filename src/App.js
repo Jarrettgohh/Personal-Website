@@ -32,7 +32,7 @@ function App() {
     },
     {
       id: 2,
-      name: "Test",
+      name: "Map Project",
       startDateTime: "3:03",
       endDateTime: "5:03",
       tagId: "Sports",
@@ -40,10 +40,11 @@ function App() {
     },
     {
       id: 3,
-      name: "Test",
+      name: "Mini Game",
       startDateTime: "3:03",
       endDateTime: "5:03",
       tagId: "Sports",
+      src: "Games.png",
     },
     {
       id: 4,
@@ -162,10 +163,21 @@ function App() {
             return (
               <Col key={event.id} className="project-card">
                 <Row noGutters={true}>
-                  <Col>
+                  <Col
+                  // xs={4}
+                  // style={{
+                  //   height: "10rem",
+                  //   overflow: "hidden",
+                  //   border: "0.2px solid silver",
+                  //   borderRadius: "1rem",
+                  //   backgroundColor: "silver",
+                  // }}
+                  >
                     <Image className="project-image" src={event.src} fluid />
                   </Col>
-                  <Col>
+                  <Col
+                  //  xs={8}
+                  >
                     <Row style={{ margin: 6 }}>
                       <h4 className="project-name-font">{event.name}</h4>
                     </Row>
@@ -258,6 +270,17 @@ function App() {
         <p style={{ fontSize: 18 }}>
           https://img.favpng.com/11/9/21/scalable-vector-graphics-javascript-python-logo-png-favpng-tKyB5ctiXpKLLQAf8tKx9kjyi.jpg
           (Python logo)
+        </p>
+        <p style={{ fontSize: 18 }}>
+          Photo credit for Maps Logo
+          https://freedesignfile.com/614055-travel-map-cartoon-vector/
+        </p>
+        <p style={{ fontSize: 18 }}>
+          Photo credit for Mini Games Logo https://www.instagram.com/skiraila/
+        </p>
+        <p style={{ fontSize: 18 }}>
+          Photo credit for Web Spider Logo
+          https://www.hiclipart.com/free-transparent-background-png-clipart-pbtsf/download
         </p>
       </div>
     </React.Fragment>

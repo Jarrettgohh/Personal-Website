@@ -38,7 +38,7 @@
   /* Prevent bug of text overflowing to bottom */
 
   max-height: 11rem;
-  min-width: 23rem;
+  min-width: 20rem;
 
   margin: 1rem;
   transition: 0.5s;
@@ -64,6 +64,5 @@
 .project-name-font {
   font-family: Candara;
   font-weight: bold;
-  /* font-size: 14px; */
   font-size: 1.2rem;
 }
