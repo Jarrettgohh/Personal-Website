@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
-import { FaGithub } from "react-icons/fa";
+import { Container, Row, Col, Card, Navbar, Nav } from "react-bootstrap";
+import { FaGithub, FaNpm, FaStackOverflow } from "react-icons/fa";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -31,8 +31,9 @@ function App() {
     },
     {
       id: 2,
-      name: "Map Project",
-      description: "Simple project to allow users to place activities on maps!",
+      name: "Map Project Website",
+      description:
+        "Simple website project to allow users to place activities on maps!",
       src: "Map.png",
     },
     {
@@ -43,17 +44,71 @@ function App() {
     },
     {
       id: 4,
-      name: "Test",
+      name: "Simple Chat System",
+      description: "Chat system for real time communication!",
+      src: "Chat-System.png",
     },
     {
       id: 5,
-      name: "Test",
+      name: "Map Project App",
+      description:
+        "Simple app project to allow users to place activities on maps!",
+      src: "Map.png",
     },
   ];
 
+  // ENABLE REPO TO PUBLIC, OR ELSE ACTIVITY WOULD ONLY SHOW PUBLIC ONES AND WOULD LOOK PUNY
+
   return (
     <React.Fragment>
-      <div>Top Navbar with link to Github, Stackoverflow and NPM account</div>
+      <Navbar
+        expand="lg"
+        sticky="top"
+        variant="dark"
+        style={{ backgroundColor: "maroon" }}
+      >
+        <Navbar.Brand href="#home" style={{ color: "white", fontSize: 28 }}>
+          Jarrett Goh
+        </Navbar.Brand>
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          style={{ color: "white" }}
+        />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link
+              target="_blank"
+              rel="noreferrer"
+              href="https://stackoverflow.com/users/14631246/jarrett?tab=profile"
+              style={{
+                color: "white",
+                fontSize: "1.2rem",
+              }}
+            >
+              <FaStackOverflow style={{ marginRight: 4 }} />
+              Stackoverflow
+            </Nav.Link>
+            <Nav.Link
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/Jarrettgohh"
+              style={{ color: "white", fontSize: "1.2rem" }}
+            >
+              <FaGithub style={{ marginRight: 4 }} />
+              Github
+            </Nav.Link>
+            <Nav.Link
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.npmjs.com/~jarrett_goh"
+              style={{ color: "white", fontSize: "1.2rem" }}
+            >
+              <FaNpm style={{ marginRight: 4 }} />
+              NPM
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
 
       <Container fluid style={{ padding: 0 }}>
         <Row
@@ -143,6 +198,9 @@ function App() {
       </Container>
 
       <Container fluid>
+        <Row style={{ padding: 16 }}>
+          <h1>Programming Projects</h1>
+        </Row>
         <Row xs={1} sm={2} md={2} lg={3} xl={4}>
           {ProjectData.map((data) => {
             return (
@@ -197,6 +255,7 @@ function App() {
             <li className="text-style">Basic Web Security</li>
             <li className="text-style">Debugging Skills</li>
             <li className="text-style">Git Workflows</li>
+            <li className="text-style">Windows Command Prompt</li>
             <li className="text-style">NPM</li>
             <li className="text-style">PIP</li>
           </ul>
@@ -252,6 +311,10 @@ function App() {
         <p style={{ fontSize: 18 }}>
           Photo credit for Web Spider Logo
           https://www.hiclipart.com/free-transparent-background-png-clipart-pbtsf/download
+        </p>
+        <p style={{ fontSize: 18 }}>
+          Photo credit for Chat System Logo
+          https://www.pinterest.com/pin/744993963353988412/
         </p>
       </div>
     </React.Fragment>
