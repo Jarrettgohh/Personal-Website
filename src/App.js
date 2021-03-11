@@ -1,5 +1,13 @@
 import React from "react";
-import { Container, Row, Col, Card, Navbar, Nav } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Card,
+  Navbar,
+  Nav,
+  NavDropdown,
+} from "react-bootstrap";
 import { FaGithub, FaNpm, FaStackOverflow } from "react-icons/fa";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -108,7 +116,8 @@ function App() {
         </Navbar.Collapse>
       </Navbar>
 
-      <Container fluid className="top-container-padding-top">
+      {/* About myself */}
+      <Container fluid className="container-padding-top">
         <Row className="row-padding">
           <h1>About myself</h1>
         </Row>
@@ -133,8 +142,51 @@ function App() {
         </Row>
       </Container>
 
+      {/* Programming projects */}
+      <Container fluid className="container-padding-top">
+        <Row className="row-padding">
+          <h1>Programming Projects</h1>
+        </Row>
+        <Row xs={1} sm={2} md={2} lg={3} xl={4} className="row-padding">
+          {ProjectData.map((data) => {
+            return (
+              // Double Card components for the margin spacing effect without losing responsive orientation
+              // Simple workaround
+              <Card className="project-outer-card" key={data.id}>
+                <Card className="project-inner-card">
+                  <Card.Img
+                    variant="top"
+                    src={data.src}
+                    className="project-card-img"
+                  />
+                  <Card.Body className="project-card-body">
+                    <Card.Title className="project-card-title">
+                      {data.name}
+                    </Card.Title>
+                    <Card.Text className="project-card-text">
+                      {data.description}
+                    </Card.Text>
+                    <Row noGutters={true}>
+                      <FaGithub size="1.4rem" />
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://github.com/Jarrettgohh/Onepa-Badminton-Courts-Finder-Python"
+                        className="project-card-github"
+                      >
+                        Source Code
+                      </a>
+                    </Row>
+                  </Card.Body>
+                </Card>
+              </Card>
+            );
+          })}
+        </Row>
+      </Container>
+
       {/* Techstack */}
-      <Container fluid>
+      <Container fluid className="container-padding-top">
         <Row xs={1} sm={1} md={1} lg={2} xl={2} className="tech-stack-row">
           {/* Left column */}
           <Col>
@@ -206,48 +258,6 @@ function App() {
               </Col>
             </Row>
           </Col>
-        </Row>
-      </Container>
-
-      <Container fluid>
-        <Row className="row-padding">
-          <h1>Programming Projects</h1>
-        </Row>
-        <Row xs={1} sm={2} md={2} lg={3} xl={4} className="row-padding">
-          {ProjectData.map((data) => {
-            return (
-              // Double Card components for the margin spacing effect without losing responsive orientation
-              // Simple workaround
-              <Card className="project-outer-card" key={data.id}>
-                <Card className="project-inner-card">
-                  <Card.Img
-                    variant="top"
-                    src={data.src}
-                    className="project-card-img"
-                  />
-                  <Card.Body className="project-card-body">
-                    <Card.Title className="project-card-title">
-                      {data.name}
-                    </Card.Title>
-                    <Card.Text className="project-card-text">
-                      {data.description}
-                    </Card.Text>
-                    <Row noGutters={true}>
-                      <FaGithub size="1.4rem" />
-                      <a
-                        target="_blank"
-                        rel="noreferrer"
-                        href="https://github.com/Jarrettgohh/Onepa-Badminton-Courts-Finder-Python"
-                        className="project-card-github"
-                      >
-                        Source Code
-                      </a>
-                    </Row>
-                  </Card.Body>
-                </Card>
-              </Card>
-            );
-          })}
         </Row>
       </Container>
 
