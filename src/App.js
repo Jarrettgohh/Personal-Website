@@ -1,9 +1,8 @@
 import React from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import { FaGit, FaGithub } from "react-icons/fa";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import { FaGithub } from "react-icons/fa";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { GradeOutlined } from "@material-ui/icons";
 
 import TechStackCol from "./components/techStackCol";
 import "./css/main.css";
@@ -22,44 +21,33 @@ function App() {
     "S3",
   ];
 
-  const testEventData = [
+  const ProjectData = [
     {
       id: 1,
       name: "onePA Badminton Courts Automation",
-      startDateTime: "3:03",
-      endDateTime: "5:03",
-      tagId: "Sports",
+      description:
+        "Python project using web scraping libraries to automate the boring stuff such as finding of badminton courts!",
       src: "Web-Crawler.png",
     },
     {
       id: 2,
       name: "Map Project",
-      startDateTime: "3:03",
-      endDateTime: "5:03",
-      tagId: "Sports",
+      description: "Simple project to allow users to place activities on maps!",
       src: "Map.png",
     },
     {
       id: 3,
-      name: "Mini Game",
-      startDateTime: "3:03",
-      endDateTime: "5:03",
-      tagId: "Sports",
+      name: "Mini Games",
+      description: "Mini experimental games made on the browser!",
       src: "Games.png",
     },
     {
       id: 4,
       name: "Test",
-      startDateTime: "3:03",
-      endDateTime: "5:03",
-      tagId: "Sports",
     },
     {
       id: 5,
       name: "Test",
-      startDateTime: "3:03",
-      endDateTime: "5:03",
-      tagId: "Sports",
     },
   ];
 
@@ -119,12 +107,16 @@ function App() {
           <Col>
             <Row>
               <Col>
-                <Row style={{ margin: 20, marginTop: 40 }}>
+                <Row
+                  style={{
+                    margin: 10,
+                    marginTop: 20,
+                    borderBottom: "2px solid silver",
+                  }}
+                >
                   <h4>
-                    <i>
-                      Languages, Frameworks, Libraries and Services used in my
-                      projects (Tech Stack)
-                    </i>
+                    Languages, Frameworks, Libraries and Services used in my
+                    projects (Tech Stack)
                   </h4>
                 </Row>
                 <Row style={{ margin: 10 }}>
@@ -152,42 +144,35 @@ function App() {
 
       <Container fluid>
         <Row xs={1} sm={2} md={2} lg={3} xl={4}>
-          {testEventData.map((data) => {
+          {ProjectData.map((data) => {
             return (
               // Double Card components for the margin spacing effect without losing responsive orientation
-              <Card style={{ border: "none" }}>
-                <Card
-                  style={{
-                    flex: 1,
-                    margin: 10,
-                  }}
-                >
+              // Simple workaround
+              <Card className="project-outer-card" key={data.id}>
+                <Card className="project-inner-card">
                   <Card.Img
                     variant="top"
                     src={data.src}
-                    style={{
-                      width: "12rem",
-                      height: "12rem",
-                      alignSelf: "center",
-                    }}
+                    className="project-card-img"
                   />
-                  <Card.Body>
-                    <Card.Title style={{ fontWeight: "bold" }}>
+                  <Card.Body className="project-card-body">
+                    <Card.Title className="project-card-title">
                       {data.name}
                     </Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                    <Card.Text className="project-card-text">
+                      {data.description}
                     </Card.Text>
-
-                    <FaGithub size="1.4rem" />
-                    <a
-                      target="_blank"
-                      href="https://github.com/Jarrettgohh/Onepa-Badminton-Courts-Finder-Python"
-                      style={{ color: "tomato", marginLeft: 10 }}
-                    >
-                      Source Code
-                    </a>
+                    <Row noGutters={true}>
+                      <FaGithub size="1.4rem" />
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://github.com/Jarrettgohh/Onepa-Badminton-Courts-Finder-Python"
+                        className="project-card-github"
+                      >
+                        Source Code
+                      </a>
+                    </Row>
                   </Card.Body>
                 </Card>
               </Card>
@@ -204,7 +189,9 @@ function App() {
         <Row>
           <ul>
             <li className="text-style">Web Design (Cascading Style Sheets)</li>
-            <li className="text-style">Responsive Design (Bootstrap)</li>
+            <li className="text-style">
+              Responsive Design (Bootstrap, rem, vh, vw units)
+            </li>
             <li className="text-style">Reusable Components</li>
             <li className="text-style">Clean Code Syntax</li>
             <li className="text-style">Basic Web Security</li>
