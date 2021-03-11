@@ -163,21 +163,10 @@ function App() {
             return (
               <Col key={event.id} className="project-card">
                 <Row noGutters={true}>
-                  <Col
-                  // xs={4}
-                  // style={{
-                  //   height: "10rem",
-                  //   overflow: "hidden",
-                  //   border: "0.2px solid silver",
-                  //   borderRadius: "1rem",
-                  //   backgroundColor: "silver",
-                  // }}
-                  >
+                  <Col>
                     <Image className="project-image" src={event.src} fluid />
                   </Col>
-                  <Col
-                  //  xs={8}
-                  >
+                  <Col>
                     <Row style={{ margin: 6 }}>
                       <h4 className="project-name-font">{event.name}</h4>
                     </Row>
