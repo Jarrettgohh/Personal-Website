@@ -1,4 +1,12 @@
-.top-row {
+.top-container-padding-top {
+  padding-top: 20px;
+}
+
+.row-padding {
+  padding: 16px;
+}
+
+.tech-stack-row {
   margin: 1.4rem;
 }
 

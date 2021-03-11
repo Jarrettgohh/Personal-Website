@@ -57,8 +57,6 @@ function App() {
     },
   ];
 
-  // ENABLE REPO TO PUBLIC, OR ELSE ACTIVITY WOULD ONLY SHOW PUBLIC ONES AND WOULD LOOK PUNY
-
   return (
     <React.Fragment>
       <Navbar
@@ -110,55 +108,69 @@ function App() {
         </Navbar.Collapse>
       </Navbar>
 
-      <Container fluid style={{ padding: 0 }}>
-        <Row
-          xs={1}
-          sm={1}
-          md={1}
-          lg={2}
-          xl={2}
-          className="top-row justify-content-center"
-          // noGutters={true}
-        >
-          {/* Left top column */}
+      <Container fluid className="top-container-padding-top">
+        <Row className="row-padding">
+          <h1>About myself</h1>
+        </Row>
+        <Row className="row-padding">
+          <p className="text-style">
+            Hello! My name is Jarrett Goh and I am a student taking a course in
+            engineering of Nanotechnology & Materials Science in Nanyang
+            Polytechnic.
+          </p>
+          <p className="text-style">
+            During my free time, I love playing sports such as Badminton,
+            exercising and doing computer programming!
+          </p>
+          <p className="text-style">
+            I got my love for programming during the first year of my studies in
+            polytechnic, when I took computer programming as one of my modules.
+            My programming language of interest includes Javascript for
+            web/mobile and Python for automations and data science. My plan for
+            the future is to find a way to combine Nanotechnology, Artifical
+            Intelligence and Automated programming together!
+          </p>
+        </Row>
+      </Container>
+
+      {/* Techstack */}
+      <Container fluid>
+        <Row xs={1} sm={1} md={1} lg={2} xl={2} className="tech-stack-row">
+          {/* Left column */}
           <Col>
             <Row xs={2} sm={2} md={2} lg={1} xl={2}>
-              <Col
-                style={{
-                  height: 200,
-                }}
-              >
-                <img
-                  src="JS_logo.png"
-                  alt="Javascript Logo"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "contain",
-                    overflow: "hidden",
-                  }}
-                />
+              <Col>
+                <div style={{ margin: 20, height: 200 }}>
+                  <img
+                    src="JS_logo.png"
+                    alt="Javascript Logo"
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "contain",
+                      overflow: "hidden",
+                    }}
+                  />
+                </div>
               </Col>
-              <Col
-                style={{
-                  height: 200,
-                }}
-              >
-                <img
-                  src="Python_logo.png"
-                  alt="Python Logo"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "contain",
-                    overflow: "hidden",
-                  }}
-                />
+              <Col>
+                <div style={{ margin: 20, height: 200 }}>
+                  <img
+                    src="Python_logo.png"
+                    alt="Python Logo"
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "contain",
+                      overflow: "hidden",
+                    }}
+                  />
+                </div>
               </Col>
             </Row>
           </Col>
 
-          {/* Right top column */}
+          {/* Right column */}
           <Col>
             <Row>
               <Col>
@@ -198,10 +210,10 @@ function App() {
       </Container>
 
       <Container fluid>
-        <Row style={{ padding: 16 }}>
+        <Row className="row-padding">
           <h1>Programming Projects</h1>
         </Row>
-        <Row xs={1} sm={2} md={2} lg={3} xl={4}>
+        <Row xs={1} sm={2} md={2} lg={3} xl={4} className="row-padding">
           {ProjectData.map((data) => {
             return (
               // Double Card components for the margin spacing effect without losing responsive orientation
@@ -239,7 +251,7 @@ function App() {
         </Row>
       </Container>
 
-      <div style={{ padding: 20 }}>
+      <Container fluid className="row-padding">
         <Row>
           <FontAwesomeIcon icon={faStar} color="green" />
           <h1>Skills Learnt</h1>
@@ -260,30 +272,9 @@ function App() {
             <li className="text-style">PIP</li>
           </ul>
         </Row>
-      </div>
+      </Container>
 
-      <div style={{ padding: 20 }}>
-        <h1>About myself</h1>
-        <p className="text-style">
-          Hello! My name is Jarrett Goh and I am a student taking a course in
-          engineering of Nanotechnology & Materials Science in Nanyang
-          Polytechnic.
-        </p>
-        <p className="text-style">
-          During my free time, I love playing sports such as Badminton,
-          exercising and doing computer programming!
-        </p>
-        <p className="text-style">
-          I got my love for programming during the first year of my studies in
-          polytechnic, when I took computer programming as one of my modules. My
-          programming language of interest includes Javascript for web/mobile
-          and Python for automations and data science. My plan for the future is
-          to find a way to combine Nanotechnology, Artifical Intelligence and
-          Automated programming together!
-        </p>
-      </div>
-
-      <div style={{ padding: 20 }}>
+      <div className="row-padding">
         <h1>Citations for images used</h1>
         <p style={{ fontSize: 18 }}>
           https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png
