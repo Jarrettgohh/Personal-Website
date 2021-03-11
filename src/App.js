@@ -1,14 +1,7 @@
 import React from "react";
-import {
-  Container,
-  Row,
-  Col,
-  Card,
-  Navbar,
-  Nav,
-  NavDropdown,
-} from "react-bootstrap";
+import { Container, Row, Col, Card, Navbar, Nav } from "react-bootstrap";
 import { FaGithub, FaNpm, FaStackOverflow } from "react-icons/fa";
+import { ImStack } from "react-icons/im";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -193,6 +186,9 @@ function App() {
         <Row xs={1} sm={1} md={1} lg={2} xl={2} className="tech-stack-row">
           {/* Left column */}
           <Col>
+            <h1 style={{ fontFamily: "Chewy" }}>Tech Stack</h1>
+            <ImStack size={36} />
+
             <Row xs={2} sm={2} md={2} lg={1} xl={2}>
               <Col>
                 <div style={{ margin: 20, height: 200 }}>
