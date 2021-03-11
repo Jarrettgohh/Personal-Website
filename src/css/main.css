@@ -1,6 +1,20 @@
+.navbar-style {
+  background-color: maroon;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 28px;
+  font-family: Chewy;
+}
+
 .container-style {
   padding-top: 20px;
   border-bottom: 2px solid silver;
+}
+
+.header-text {
+  font-family: Chewy;
 }
 
 .row-padding {
@@ -55,8 +69,10 @@
   transition: 0.4s;
 }
 
-.project-card-body {
-  border-top: 0.2px solid whitesmoke;
+.project-card-img {
+  width: 12rem;
+  height: 12rem;
+  align-self: center;
 }
 
 .project-card-title {
@@ -68,18 +84,21 @@
   color: tomato;
 }
 
+.project-card-body {
+  border-top: 0.2px solid silver;
+}
+
 .project-card-text {
   font-size: 1rem;
-  height: 6rem;
+  padding-bottom: 10px;
+}
+
+.project-github-row {
+  position: absolute;
+  bottom: 0.4rem;
 }
 
 .project-card-github {
   color: gray;
   margin-left: 10px;
-}
-
-.project-card-img {
-  width: 12rem;
-  height: 12rem;
-  align-self: center;
 }
