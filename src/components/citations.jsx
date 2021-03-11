@@ -1,11 +1,13 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 
 const Citations = () => {
   return (
     <Container fluid className="container-style">
-      <div className="row-padding">
+      <Row className="row-padding">
         <h1 className="header-text">Citations for images used</h1>
+      </Row>
+      <Row className="row-padding">
         <p style={{ fontSize: 18 }}>
           https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png
           (Javascript logo)
@@ -41,7 +43,7 @@ const Citations = () => {
           Photo credit for Chat System Logo
           https://www.pinterest.com/pin/744993963353988412/
         </p>
-      </div>
+      </Row>
     </Container>
   );
 };
