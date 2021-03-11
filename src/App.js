@@ -73,7 +73,10 @@ function App() {
         variant="dark"
         style={{ backgroundColor: "maroon" }}
       >
-        <Navbar.Brand href="#home" style={{ color: "white", fontSize: 28 }}>
+        <Navbar.Brand
+          href="#home"
+          style={{ color: "white", fontSize: 28, fontFamily: "Chewy" }}
+        >
           Jarrett Goh
         </Navbar.Brand>
         <Navbar.Toggle
@@ -117,9 +120,9 @@ function App() {
       </Navbar>
 
       {/* About myself */}
-      <Container fluid className="container-padding-top">
+      <Container fluid className="container-style">
         <Row className="row-padding">
-          <h1>About myself</h1>
+          <h1 style={{ fontFamily: "Chewy" }}>About myself</h1>
         </Row>
         <Row className="row-padding">
           <p className="text-style">
@@ -143,9 +146,9 @@ function App() {
       </Container>
 
       {/* Programming projects */}
-      <Container fluid className="container-padding-top">
+      <Container fluid className="container-style">
         <Row className="row-padding">
-          <h1>Programming Projects</h1>
+          <h1 style={{ fontFamily: "Chewy" }}>Programming Projects</h1>
         </Row>
         <Row xs={1} sm={2} md={2} lg={3} xl={4} className="row-padding">
           {ProjectData.map((data) => {
@@ -186,7 +189,7 @@ function App() {
       </Container>
 
       {/* Techstack */}
-      <Container fluid className="container-padding-top">
+      <Container fluid className="container-style">
         <Row xs={1} sm={1} md={1} lg={2} xl={2} className="tech-stack-row">
           {/* Left column */}
           <Col>

@@ -1,5 +1,6 @@
-.container-padding-top {
+.container-style {
   padding-top: 20px;
+  border-bottom: 2px solid silver;
 }
 
 .row-padding {
