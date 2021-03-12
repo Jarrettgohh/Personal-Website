@@ -8,6 +8,7 @@ import ProjectComponent from "./components/projects/projectComponent";
 import onePAProject from "./components/projects/onePAProject.js";
 import mapProjectWebsite from "./components/projects/mapProjectWebsite";
 import mapProjectApp from "./components/projects/mapProjectApp";
+import miniGames from "./components/projects/miniGames";
 
 import "./css/main.css";
 
@@ -49,7 +50,13 @@ function App() {
             />
           </Route>
           <Route path="/projects/mini-games">
-            <ProjectComponent />
+            <ProjectComponent
+              name="Mini Browser Games"
+              about={miniGames.about()}
+              learnt={miniGames.learnt()}
+              resources={miniGames.resources()}
+              github={miniGames.github()}
+            />
           </Route>
           <Route path="/projects/simple-chat-system">
             <ProjectComponent />
