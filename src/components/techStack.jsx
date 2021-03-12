@@ -26,7 +26,7 @@ const TechStack = () => {
             <Col>
               <div style={{ margin: 20, height: 200 }}>
                 <img
-                  src="JS_logo.png"
+                  src="Personal-Website/JS_logo.png"
                   alt="Javascript Logo"
                   style={{
                     width: "100%",
@@ -40,7 +40,7 @@ const TechStack = () => {
             <Col>
               <div style={{ margin: 20, height: 200 }}>
                 <img
-                  src="Python_logo.png"
+                  src="Personal-Website/Python_logo.png"
                   alt="Python Logo"
                   style={{
                     width: "100%",
