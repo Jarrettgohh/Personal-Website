@@ -1,6 +1,5 @@
 import React from "react";
 
-import NavbarComponent from "./navbarComponent";
 import AboutMyself from "./aboutMyself";
 import ProgrammingProjects from "./programmingProjects";
 import TechStack from "./techStack";
@@ -11,10 +10,7 @@ import Citations from "./citations";
 
 const MainPage = () => {
   return (
-    <React.Fragment>
-      {/* Navbar Component */}
-      <NavbarComponent />
-
+    <>
       {/* ABOUT MYSELF */}
       <AboutMyself />
 
@@ -35,7 +31,7 @@ const MainPage = () => {
 
       {/* Citations */}
       <Citations />
-    </React.Fragment>
+    </>
   );
 };
 

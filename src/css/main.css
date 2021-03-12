@@ -17,6 +17,11 @@
   font-family: Chewy;
 }
 
+.header-text-lg {
+  font-family: Chewy;
+  font-size: 3rem;
+}
+
 .row-padding {
   padding: 16px;
 }

@@ -1,41 +1,48 @@
 import React from "react";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
+import NavbarComponent from "./components/navbarComponent";
 import MainPage from "./components/mainPage";
-import OnePAProject from "./components/onePAProject";
+import OnePAProject from "./components/projects/onePAProject";
 
 import "./css/main.css";
 
 function App() {
   return (
     // To be refactored
-    <BrowserRouter>
-      <Switch>
-        <Route path="/projects/onepa-badminton-automation">
-          <OnePAProject />
-        </Route>
-        <Route path="/projects/map-project-website">
-          <OnePAProject />
-        </Route>
-        <Route path="/projects/map-project-app">
-          <OnePAProject />
-        </Route>
-        <Route path="/projects/mini-games">
-          <OnePAProject />
-        </Route>
-        <Route path="/projects/simple-chat-system">
-          <OnePAProject />
-        </Route>
-        <Route path="/projects/binary-rain">
-          <OnePAProject />
-        </Route>
-        <Route path="/">
-          <MainPage />
-        </Route>
 
-        <Redirect to="/not-found" />
-      </Switch>
-    </BrowserRouter>
+    <>
+      {/* Navbar Component */}
+      <NavbarComponent />
+
+      <BrowserRouter>
+        <Switch>
+          <Route path="/projects/onepa-badminton-automation">
+            <OnePAProject />
+          </Route>
+          <Route path="/projects/map-project-website">
+            <OnePAProject />
+          </Route>
+          <Route path="/projects/map-project-app">
+            <OnePAProject />
+          </Route>
+          <Route path="/projects/mini-games">
+            <OnePAProject />
+          </Route>
+          <Route path="/projects/simple-chat-system">
+            <OnePAProject />
+          </Route>
+          <Route path="/projects/binary-rain">
+            <OnePAProject />
+          </Route>
+          <Route path="/">
+            <MainPage />
+          </Route>
+
+          <Redirect to="/not-found" />
+        </Switch>
+      </BrowserRouter>
+    </>
   );
 }
 
