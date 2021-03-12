@@ -73,6 +73,9 @@ const ProgrammingProjects = () => {
 
       case 6:
         return "binary-rain";
+
+      default:
+        break;
     }
   };
 

@@ -1,10 +1,12 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
+import { GradeOutlined } from "@material-ui/icons";
 
 const OnePAProject = () => {
   return (
-    <Container fluid>
-      <Row className="row-padding">
+    <Container fluid className="project-container-style">
+      {/* ABOUT THE PROJECT */}
+      <Row className="row-padding" style={{ borderBottom: "2px solid silver" }}>
         <h1 className="header-text-lg">onePA Badminton Court Automation</h1>
       </Row>
       <Row className="row-padding">
@@ -33,6 +35,7 @@ const OnePAProject = () => {
         </p>
       </Row>
 
+      {/* WHAT I HAVE LEARNT */}
       <Row className="row-padding">
         <h1 className="header-text">What I have learnt</h1>
       </Row>
@@ -48,8 +51,37 @@ const OnePAProject = () => {
           Another key takeaway would be being able to practice my Python
           scripting skills & to understand more about the syntax of Python. This
           project have gave me knowledgable insides on how useful automations
-          can be and also showed me how fun it could be too ;)
+          can be and also how fun it could be too ;)
         </p>
+      </Row>
+
+      {/* LEARNING RESOURCES */}
+      <Row className="row-padding">
+        <h1 className="header-text">Learning Resources</h1>
+      </Row>
+      <Row>
+        <GradeOutlined style={{ fill: "#FADD08", fontSize: "2rem" }} />
+        <a
+          className="text-style-lg-italic"
+          style={{ cursor: "pointer" }}
+          target="_blank"
+          rel="noreferrer"
+          href="https://requests.readthedocs.io/en/master/"
+        >
+          Requests
+        </a>
+      </Row>
+      <Row>
+        <GradeOutlined style={{ fill: "#FADD08", fontSize: "2rem" }} />
+        <a
+          className="text-style-lg-italic"
+          style={{ cursor: "pointer" }}
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/"
+        >
+          Beautiful Soup
+        </a>
       </Row>
     </Container>
   );

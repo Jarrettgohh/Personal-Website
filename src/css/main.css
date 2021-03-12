@@ -13,6 +13,11 @@
   border-bottom: 2px solid silver;
 }
 
+.project-container-style {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
 .header-text {
   font-family: Chewy;
 }
@@ -32,6 +37,11 @@
 
 .text-style {
   font-size: 1.2rem;
+}
+
+.text-style-lg-italic {
+  font-size: 1.4rem;
+  font-style: italic;
 }
 
 .text-style-header-JS {
