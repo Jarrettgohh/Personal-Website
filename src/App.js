@@ -3,7 +3,9 @@ import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 import NavbarComponent from "./components/navbarComponent";
 import MainPage from "./components/mainPage";
-import OnePAProject from "./components/projects/onePAProject";
+import ProjectComponent from "./components/projects/projectComponent";
+
+import onePAProject from "./components/projects/onePAProject.js";
 
 import "./css/main.css";
 
@@ -18,22 +20,34 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route path="/projects/onepa-badminton-automation">
-            <OnePAProject />
+            <ProjectComponent
+              name="onePA Badminton Court Automation"
+              about={onePAProject.about()}
+              learnt={onePAProject.learnt()}
+              resources={onePAProject.resources()}
+              github={onePAProject.github()}
+            />
           </Route>
           <Route path="/projects/map-project-website">
-            <OnePAProject />
+            <ProjectComponent
+              name="onePA Badminton Court Automation"
+              about={onePAProject.about()}
+              learnt={onePAProject.learnt()}
+              resources={onePAProject.resources()}
+              github={onePAProject.github()}
+            />
           </Route>
           <Route path="/projects/map-project-app">
-            <OnePAProject />
+            <ProjectComponent />
           </Route>
           <Route path="/projects/mini-games">
-            <OnePAProject />
+            <ProjectComponent />
           </Route>
           <Route path="/projects/simple-chat-system">
-            <OnePAProject />
+            <ProjectComponent />
           </Route>
           <Route path="/projects/binary-rain">
-            <OnePAProject />
+            <ProjectComponent />
           </Route>
           <Route path="/">
             <MainPage />

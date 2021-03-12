@@ -119,4 +119,5 @@
 .project-card-github {
   color: gray;
   margin-left: 10px;
+  cursor: pointer;
 }

@@ -43,7 +43,7 @@ const ProgrammingProjects = () => {
     {
       id: 3,
       name: "Map Project App",
-      description: "Mobile App version of the map project website",
+      description: "Mobile App version of the map project website.",
       src: "Personal-Website/Map-App.png",
       stack: (
         <>
