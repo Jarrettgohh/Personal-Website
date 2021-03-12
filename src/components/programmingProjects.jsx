@@ -35,8 +35,7 @@ const ProgrammingProjects = () => {
       id: 4,
       name: "Simple Chat System",
       description: "Chat system for real time communication!",
-      src: "Chat-System.png",
-      fullWidth: true,
+      src: "Chat-System-Icon.png",
     },
     {
       id: 5,

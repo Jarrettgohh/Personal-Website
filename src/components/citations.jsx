@@ -41,7 +41,7 @@ const Citations = () => {
         </p>
         <p style={{ fontSize: 18 }}>
           Photo credit for Chat System Logo
-          https://www.pinterest.com/pin/744993963353988412/
+          https://www.iconfinder.com/icons/171351/messages_chat_icon
         </p>
         <p style={{ fontSize: 18 }}>
           Photo credit for Binary Rain Logo
