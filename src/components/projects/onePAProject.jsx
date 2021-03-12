@@ -51,8 +51,8 @@ const OnePAProject = () => {
         <p className="text-style">
           Another key takeaway would be being able to practice my Python
           scripting skills & to understand more about the syntax of Python. This
-          project have gave me knowledgable insides on how useful automations
-          can be and also how fun it could be too ;)
+          project have gave me knowledgable insides on how useful & fun
+          automations can be ;)
         </p>
       </Row>
 

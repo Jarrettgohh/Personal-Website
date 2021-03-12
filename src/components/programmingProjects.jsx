@@ -7,7 +7,11 @@ import {
   FaNodeJs,
   FaBootstrap,
   FaAws,
+  FaHtml5,
+  FaCss3,
+  FaJs,
 } from "react-icons/fa";
+import { SiHeroku, SiSocketDotIo } from "react-icons/si";
 import { useHistory } from "react-router-dom";
 
 const ProgrammingProjects = () => {
@@ -18,39 +22,77 @@ const ProgrammingProjects = () => {
       name: "onePA Badminton Courts Automation",
       description:
         "Python project using web scraping libraries to automate the boring stuff such as finding of badminton courts!",
-      src: "Web-Crawler.png",
+      src: "Personal-Website/Web-Crawler.png",
+      stack: <FaPython size="1.4rem" color="#FAC308" />,
     },
     {
       id: 2,
       name: "Map Project Website",
       description:
         "Simple website project to allow users to place activities on maps!",
-      src: "Map.png",
+      src: "Personal-Website/Map.png",
+      stack: (
+        <>
+          <FaReact size="1.4rem" color="#08DDFA" />
+          <FaNodeJs size="1.4rem" color="green" />
+          <FaBootstrap size="1.4rem" color="purple" />
+          <FaAws size="1.4rem" color="#AA9939" />
+        </>
+      ),
     },
     {
       id: 3,
       name: "Map Project App",
       description: "Mobile App version of the map project website",
-      src: "Map-App.png",
+      src: "Personal-Website/Map-App.png",
+      stack: (
+        <>
+          <FaReact size="1.4rem" color="#08DDFA" />
+          <FaNodeJs size="1.4rem" color="green" />
+        </>
+      ),
     },
     {
       id: 4,
       name: "Mini Games",
       description: "Mini experimental games made on the browser!",
-      src: "Games.png",
+      src: "Personal-Website/Games.png",
+      stack: (
+        <>
+          <FaJs size="1.4rem" color="#FFD900" />
+          <FaHtml5 size="1.4rem" color="red" />
+          <FaCss3 size="1.4rem" color="blue" />
+        </>
+      ),
     },
     {
       id: 5,
       name: "Simple Chat System",
       description: "Chat system for real time communication!",
-      src: "Chat-System-Icon.png",
+      src: "Personal-Website/Chat-System-Icon.png",
+      stack: (
+        <>
+          <FaReact size="1.4rem" color="#08DDFA" />
+          <FaNodeJs size="1.4rem" color="green" />
+          <SiSocketDotIo size="1.4rem" color="gray" />
+          <SiHeroku size="1.4rem" color="purple" />
+          <FaAws size="1.4rem" color="#AA9939" />
+        </>
+      ),
     },
     {
       id: 6,
       name: "Matrix Binary Screen",
       description: "Binary Falling screen with different colors.",
-      src: "Binary-Rain.png",
+      src: "Personal-Website/Binary-Rain.png",
       fullWidth: true,
+      stack: (
+        <>
+          <FaJs size="1.4rem" color="#FFD900" />
+          <FaHtml5 size="1.4rem" color="red" />
+          <FaCss3 size="1.4rem" color="blue" />
+        </>
+      ),
     },
   ];
 
@@ -135,11 +177,7 @@ const ProgrammingProjects = () => {
                         marginRight: 30,
                       }}
                     >
-                      <FaPython size="1.4rem" color="#FAC308" />
-                      <FaReact size="1.4rem" color="#08DDFA" />
-                      <FaNodeJs size="1.4rem" color="green" />
-                      <FaBootstrap size="1.4rem" color="purple" />
-                      <FaAws size="1.4rem" color="#AA9939" />
+                      {data.stack}
                     </div>
                   </Row>
                 </Card.Body>
