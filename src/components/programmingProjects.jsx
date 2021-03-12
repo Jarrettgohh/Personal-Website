@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Card } from "react-bootstrap";
 import { FaGithub } from "react-icons/fa";
+import { useHistory } from "react-router-dom";
 
 const ProgrammingProjects = () => {
   // To be queried from Node Js server
@@ -20,31 +21,60 @@ const ProgrammingProjects = () => {
       src: "Map.png",
     },
     {
-      id: 5,
+      id: 3,
       name: "Map Project App",
       description: "Mobile App version of the map project website",
       src: "Map-App.png",
     },
     {
-      id: 3,
+      id: 4,
       name: "Mini Games",
       description: "Mini experimental games made on the browser!",
       src: "Games.png",
     },
     {
-      id: 4,
+      id: 5,
       name: "Simple Chat System",
       description: "Chat system for real time communication!",
       src: "Chat-System-Icon.png",
     },
     {
-      id: 5,
+      id: 6,
       name: "Matrix Binary Screen",
       description: "Binary Falling screen with different colors.",
       src: "Binary-Rain.png",
       fullWidth: true,
     },
   ];
+
+  const history = useHistory();
+
+  const handleProjectClick = (projectId) => {
+    const url = returnRouteURL(projectId);
+    history.push(`/projects/${url}`);
+  };
+
+  const returnRouteURL = (id) => {
+    switch (id) {
+      case 1:
+        return "onepa-badminton-automation";
+
+      case 2:
+        return "map-project-website";
+
+      case 3:
+        return "map-project-app";
+
+      case 4:
+        return "mini-games";
+
+      case 5:
+        return "simple-chat-system";
+
+      case 6:
+        return "binary-rain";
+    }
+  };
 
   return (
     <Container fluid className="container-style">
@@ -56,7 +86,12 @@ const ProgrammingProjects = () => {
           return (
             // Double Card components for the margin spacing effect without losing responsive orientation
             // Simple workaround
-            <Card className="project-outer-card" key={data.id}>
+
+            <Card
+              className="project-outer-card"
+              key={data.id}
+              onClick={() => handleProjectClick(data.id)}
+            >
               <Card className="project-inner-card">
                 <Card.Img
                   variant="top"

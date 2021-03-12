@@ -1,43 +1,41 @@
 import React from "react";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
-import NavbarComponent from "./components/navbarComponent";
-import AboutMyself from "./components/aboutMyself";
-import ProgrammingProjects from "./components/programmingProjects";
-import TechStack from "./components/techStack";
-import FutureProjectIdeas from "./components/futureProjectIdeas";
-import SkillsLearnt from "./components/skillsLearnt";
-import Certifications from "./components/certifications";
-import Citations from "./components/citations";
+import MainPage from "./components/mainPage";
+import OnePAProject from "./components/onePAProject";
 
 import "./css/main.css";
 
 function App() {
   return (
-    <React.Fragment>
-      {/* Navbar Component */}
-      <NavbarComponent />
+    // To be refactored
+    <BrowserRouter>
+      <Switch>
+        <Route path="/projects/onepa-badminton-automation">
+          <OnePAProject />
+        </Route>
+        <Route path="/projects/map-project-website">
+          <OnePAProject />
+        </Route>
+        <Route path="/projects/map-project-app">
+          <OnePAProject />
+        </Route>
+        <Route path="/projects/mini-games">
+          <OnePAProject />
+        </Route>
+        <Route path="/projects/simple-chat-system">
+          <OnePAProject />
+        </Route>
+        <Route path="/projects/binary-rain">
+          <OnePAProject />
+        </Route>
+        <Route path="/">
+          <MainPage />
+        </Route>
 
-      {/* ABOUT MYSELF */}
-      <AboutMyself />
-
-      {/* PROGRAMMING PROJECTS */}
-      <ProgrammingProjects />
-
-      {/* TECHSTACK*/}
-      <TechStack />
-
-      {/* FUTURE PROJECT IDEAS */}
-      <FutureProjectIdeas />
-
-      {/* Skills Learnt */}
-      <SkillsLearnt />
-
-      {/* CERTIFICATIONS */}
-      <Certifications />
-
-      {/* Citations */}
-      <Citations />
-    </React.Fragment>
+        <Redirect to="/not-found" />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
