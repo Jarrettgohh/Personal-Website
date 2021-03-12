@@ -13,7 +13,7 @@ const SkillsLearnt = () => {
         <ul>
           <li className="text-style">Web Design (Cascading Style Sheets)</li>
           <li className="text-style">
-            Responsive Design (Bootstrap, rem, vh, vw units)
+            Responsive Design (Bootstrap, media queries, rem, vh, vw units)
           </li>
           <li className="text-style">Reusable Components</li>
           <li className="text-style">Clean Code Syntax</li>

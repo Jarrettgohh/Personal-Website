@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import { GradeOutlined } from "@material-ui/icons";
+import { FaGithub } from "react-icons/fa";
 
 const OnePAProject = () => {
   return (
@@ -41,11 +42,11 @@ const OnePAProject = () => {
       </Row>
       <Row className="row-padding">
         <p className="text-style">
-          From this project, I have learnt about many libraries such as Requests
-          & Beautiful Soup. Using these libraries allowed me to gain a deeper
-          understanding of how HTTP requests works such as the GET requests. I
-          have also learnt more about the HTML syntax and how it is used to
-          display informations.
+          From this project, I have learnt two libraries namely the Python
+          Requests & Beautiful Soup modules. Using these libraries allowed me to
+          gain a deeper understanding of how HTTP requests works such as the GET
+          requests. I have also learnt more about the HTML syntax and how it is
+          used to display informations.
         </p>
         <p className="text-style">
           Another key takeaway would be being able to practice my Python
@@ -81,6 +82,19 @@ const OnePAProject = () => {
           href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/"
         >
           Beautiful Soup
+        </a>
+      </Row>
+
+      {/* GITHUB SOURCE CODE */}
+      <Row noGutters={true} className="project-github-row">
+        <FaGithub size="1.4rem" />
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/Jarrettgohh/Onepa-Badminton-Courts-Finder-Python"
+          className="project-card-github"
+        >
+          Source Code
         </a>
       </Row>
     </Container>

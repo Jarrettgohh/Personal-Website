@@ -1,6 +1,13 @@
 import React from "react";
 import { Container, Row, Card } from "react-bootstrap";
-import { FaGithub } from "react-icons/fa";
+import {
+  FaGithub,
+  FaPython,
+  FaReact,
+  FaNodeJs,
+  FaBootstrap,
+  FaAws,
+} from "react-icons/fa";
 import { useHistory } from "react-router-dom";
 
 const ProgrammingProjects = () => {
@@ -119,6 +126,21 @@ const ProgrammingProjects = () => {
                     >
                       Source Code
                     </a>
+
+                    <div
+                      style={{
+                        display: "flex",
+                        flex: 1,
+                        justifyContent: "flex-end",
+                        marginRight: 30,
+                      }}
+                    >
+                      <FaPython size="1.4rem" color="#FAC308" />
+                      <FaReact size="1.4rem" color="#08DDFA" />
+                      <FaNodeJs size="1.4rem" color="green" />
+                      <FaBootstrap size="1.4rem" color="purple" />
+                      <FaAws size="1.4rem" color="#AA9939" />
+                    </div>
                   </Row>
                 </Card.Body>
               </Card>
