@@ -2,12 +2,12 @@ function about() {
   return (
     <>
       <p className="text-style">
-        I started this project at about the 3rd quarter of 2019. As a Badminton
-        player myself, inevitably I have to book courts to play. However, the
-        process of finding courts is very painstaking and tedious, as I have to
-        check the different locations one by one. The inspiration behind this
-        project is to ease the process of finding courts & to also practice on
-        my Python skills.
+        I started on this project in June of 2019. As a Badminton player myself,
+        inevitably I have to book courts to play. However, the process of
+        finding courts is very painstaking and tedious, as I have to check the
+        different locations one by one. The inspiration behind this project is
+        to ease the process of finding courts & to also practice on my Python
+        skills.
       </p>
       <p className="text-style">
         The Requests module was used to send HTTP requests to the onePA website;

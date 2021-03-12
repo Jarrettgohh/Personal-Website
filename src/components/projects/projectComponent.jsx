@@ -8,7 +8,9 @@ const ProjectComponent = ({ name, about, learnt, resources, github }) => {
     <Container fluid className="project-container-style">
       {/* ABOUT THE PROJECT */}
       <Row className="row-padding" style={{ borderBottom: "2px solid silver" }}>
-        <h1 className="header-text-lg">{name}</h1>
+        <h1 className="header-text-lg" style={{ color: "maroon" }}>
+          {name}
+        </h1>
       </Row>
       <Row className="row-padding">
         <h1 className="header-text">About The Project</h1>
@@ -25,9 +27,9 @@ const ProjectComponent = ({ name, about, learnt, resources, github }) => {
       <Row className="row-padding">
         <h1 className="header-text">Learning Resources</h1>
       </Row>
-      {resources.map((resource) => {
+      {resources.map((resource, index) => {
         return (
-          <Row>
+          <Row key={index}>
             <GradeOutlined style={{ fill: "#FADD08", fontSize: "2rem" }} />
             <a
               className="text-style-lg-italic"

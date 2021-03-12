@@ -6,6 +6,8 @@ import MainPage from "./components/mainPage";
 import ProjectComponent from "./components/projects/projectComponent";
 
 import onePAProject from "./components/projects/onePAProject.js";
+import mapProjectWebsite from "./components/projects/mapProjectWebsite";
+import mapProjectApp from "./components/projects/mapProjectApp";
 
 import "./css/main.css";
 
@@ -30,15 +32,21 @@ function App() {
           </Route>
           <Route path="/projects/map-project-website">
             <ProjectComponent
-              name="onePA Badminton Court Automation"
-              about={onePAProject.about()}
-              learnt={onePAProject.learnt()}
-              resources={onePAProject.resources()}
-              github={onePAProject.github()}
+              name="Map Project Website"
+              about={mapProjectWebsite.about()}
+              learnt={mapProjectWebsite.learnt()}
+              resources={mapProjectWebsite.resources()}
+              github={mapProjectWebsite.github()}
             />
           </Route>
           <Route path="/projects/map-project-app">
-            <ProjectComponent />
+            <ProjectComponent
+              name="Map Project App"
+              about={mapProjectApp.about()}
+              learnt={mapProjectApp.learnt()}
+              resources={mapProjectApp.resources()}
+              github={mapProjectApp.github()}
+            />
           </Route>
           <Route path="/projects/mini-games">
             <ProjectComponent />

@@ -17,12 +17,13 @@ const SkillsLearnt = () => {
           </li>
           <li className="text-style">Reusable Components</li>
           <li className="text-style">Clean Code Syntax</li>
-          <li className="text-style">Basic Web Security</li>
+          <li className="text-style">Basic Web Security (JWT tokens)</li>
           <li className="text-style">Debugging Skills</li>
           <li className="text-style">Git Workflows</li>
           <li className="text-style">Windows Command Prompt</li>
           <li className="text-style">NPM</li>
           <li className="text-style">PIP</li>
+          <li className="text-style">API workings</li>
         </ul>
       </Row>
     </Container>

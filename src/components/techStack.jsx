@@ -5,7 +5,7 @@ import { ImStack } from "react-icons/im";
 
 const TechStack = () => {
   // To be queried from Node Js server
-  const techStackJS = ["React Js", "Node Js", "Bootstrap", "Express Js"];
+  const techStackJS = ["React Js", "Node Js", "Express Js"];
   const techStackPy = ["Requests", "Beautiful Soup (BS4)"];
   const techStackAWS = [
     "Amplify",

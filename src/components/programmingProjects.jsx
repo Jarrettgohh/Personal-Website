@@ -36,7 +36,6 @@ const ProgrammingProjects = () => {
           <FaReact size="1.4rem" color="#08DDFA" />
           <FaNodeJs size="1.4rem" color="green" />
           <FaBootstrap size="1.4rem" color="purple" />
-          <FaAws size="1.4rem" color="#AA9939" />
         </>
       ),
     },
