@@ -5,11 +5,11 @@ import { GradeOutlined } from "@material-ui/icons";
 const SkillsLearnt = () => {
   return (
     <Container fluid className="container-style">
-      <Row className="row-padding" className="row-padding">
+      <Row className="row-padding">
         <GradeOutlined style={{ fill: "#FADD08", fontSize: "2.6rem" }} />
         <h1 className="header-text">Skills Learnt</h1>
       </Row>
-      <Row className="row-padding" className="row-padding">
+      <Row className="row-padding">
         <ul>
           <li className="text-style">Web Design (Cascading Style Sheets)</li>
           <li className="text-style">

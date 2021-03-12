@@ -43,6 +43,10 @@ const Citations = () => {
           Photo credit for Chat System Logo
           https://www.pinterest.com/pin/744993963353988412/
         </p>
+        <p style={{ fontSize: 18 }}>
+          Photo credit for Binary Rain Logo
+          https://www.pinterest.com/pin/593982638338367375/
+        </p>
       </Row>
     </Container>
   );

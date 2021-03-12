@@ -36,6 +36,14 @@ const ProgrammingProjects = () => {
       name: "Simple Chat System",
       description: "Chat system for real time communication!",
       src: "Chat-System.png",
+      fullWidth: true,
+    },
+    {
+      id: 5,
+      name: "Matrix Binary Screen",
+      description: "Binary Falling screen with different colors.",
+      src: "Binary-Rain.png",
+      fullWidth: true,
     },
   ];
 
@@ -55,6 +63,7 @@ const ProgrammingProjects = () => {
                   variant="top"
                   src={data.src}
                   className="project-card-img"
+                  style={data.fullWidth && { width: "100%" }}
                 />
                 <Card.Body className="project-card-body">
                   <Card.Title className="project-card-title">
