@@ -85,7 +85,6 @@ function App() {
               name="Cool Matrix Stuff"
               examples={matrixStuff.examples()}
               about={matrixStuff.about()}
-              problems={matrixStuff.problems()}
               learnt={matrixStuff.learnt()}
               resources={matrixStuff.resources()}
               github={matrixStuff.github()}

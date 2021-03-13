@@ -56,10 +56,14 @@ const ProjectComponent = ({
       <Row className="row-padding">{about}</Row>
 
       {/* PROBLEMS FACED */}
-      <Row className="row-padding">
-        <h1 className="header-text">Problems Faced</h1>
-      </Row>
-      <Row className="row-padding">{problems}</Row>
+      {problems && (
+        <>
+          <Row className="row-padding">
+            <h1 className="header-text">Problems Faced</h1>
+          </Row>
+          <Row className="row-padding">{problems}</Row>
+        </>
+      )}
 
       {/* WHAT I HAVE LEARNT */}
       <Row className="row-padding">

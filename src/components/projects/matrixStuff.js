@@ -14,6 +14,10 @@ function about() {
         would appear on its own in a certain manner; appearing like the computer
         was talking.
       </p>
+      <p className="text-style">
+        Click anywhere on the canvas of the binary rain to see the change in
+        color!
+      </p>
     </>
   );
 }
@@ -22,24 +26,20 @@ function examples() {
   return [
     {
       name: "Wanna see some cool matrix stuff?!",
-      url: "https://youtube.com",
+      url: "https://jarrettgohh.github.io/Cool-Matrix-Stuff/",
     },
   ];
-}
-function problems() {
-  return (
-    <>
-      <p className="text-style"></p>
-      <p className="text-style"></p>
-      <p className="text-style"></p>
-    </>
-  );
 }
 
 function learnt() {
   return (
     <>
-      <p className="text-style"></p>
+      <p className="text-style">
+        From this project, I have learnt learn how to better utilise Javascript
+        functions. Another important skill I have learnt is how Javascript is
+        able to be linked and communicate with HTML to control how the elements
+        are rendered.
+      </p>
       <p className="text-style"></p>
     </>
   );
@@ -58,7 +58,7 @@ function github() {
   return [
     {
       name: "Matrix stuff",
-      url: "https://github.com/Jarrettgohh/Binary-Rain",
+      url: "https://github.com/Jarrettgohh/Cool-Matrix-Stuff",
     },
   ];
 }
@@ -67,7 +67,6 @@ function github() {
 export default {
   about,
   examples,
-  problems,
   learnt,
   resources,
   github,
