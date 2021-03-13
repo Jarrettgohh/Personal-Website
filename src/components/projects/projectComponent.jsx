@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Container, Row } from "react-bootstrap";
 import { GradeOutlined } from "@material-ui/icons";
 import { FaGithub } from "react-icons/fa";
@@ -15,8 +15,18 @@ const ProjectComponent = ({
   packages,
   github,
 }) => {
+  const topRow = useRef();
+
+  useEffect(() => {
+    // To make sure page starts from the top
+    topRow.current.scrollIntoView({ block: "end", behavior: "smooth" });
+  }, []);
+
   return (
     <Container fluid className="project-container-style">
+      {/* TOP ROW AS A WORKAROUND, BECAUSE PAGE ALWAYS NOT AT TOP ON RENDER */}
+      <Row ref={topRow} />
+
       {/* ABOUT THE PROJECT */}
       <Row className="row-padding" style={{ borderBottom: "2px solid silver" }}>
         <h1 className="header-text-lg" style={{ color: "maroon" }}>

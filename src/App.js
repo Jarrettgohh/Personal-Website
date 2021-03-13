@@ -82,7 +82,7 @@ function App() {
           </Route>
           <Route path="/projects/binary-rain">
             <ProjectComponent
-              name="Chat System"
+              name="Cool Matrix Stuff"
               examples={matrixStuff.examples()}
               about={matrixStuff.about()}
               problems={matrixStuff.problems()}
