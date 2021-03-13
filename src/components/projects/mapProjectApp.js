@@ -6,8 +6,20 @@ function about() {
         React Native from an online course. It was relatively easy for me to
         learn React Native due to my background of Javascript and React. My plan
         for this project is to better understand the workflows of mobile
-        development & the best practices involved.
+        development and the best practices involved.
       </p>
+    </>
+  );
+}
+
+function examples() {
+  return [{ name: "Map some activities!", url: "https://youtube.com" }];
+}
+
+function problems() {
+  return (
+    <>
+      <p className="text-style"></p>
     </>
   );
 }
@@ -34,13 +46,27 @@ function resources() {
   ];
 }
 
-function github() {
-  return "https://github.com/Jarrettgohh/React-Native-App";
+function packages() {
+  return [
+    {
+      name: "RN-draggable-bottom-sheet",
+      url:
+        "https://www.npmjs.com/package/@react-native-tools/rn-draggable-bottom-sheet",
+    },
+  ];
 }
 
+function github() {
+  return [{ url: "https://github.com/Jarrettgohh/React-Native-App" }];
+}
+
+//eslint-disable-next-line
 export default {
   about,
+  examples,
+  problems,
   learnt,
   resources,
   github,
+  packages,
 };

@@ -7,14 +7,26 @@ function about() {
         React, I was able to experience the basic web development experince
         processes such as planning of design, implementation of it and to
         refactor the code to make them more readable by other developers. This
-        project includes good & industry standard practices such as clean code
+        project includes good and industry standard practices such as clean code
         syntaxing, reusable component, responsive/clean design using
         React-Bootstrap and basic web security such as usage of JWT. After
         finishing on the frontend of this project, I went on to take a Node Js
         course to develop the backend. Despite imperfections in areas, I would
-        strive to make it better by continue researching & improving on my web
+        strive to make it better by continue researching and improving on my web
         development workflow.
       </p>
+    </>
+  );
+}
+
+function examples() {
+  return [{ name: "Map some activities!", url: "https://youtube.com" }];
+}
+
+function problems() {
+  return (
+    <>
+      <p className="text-style"></p>
     </>
   );
 }
@@ -28,7 +40,7 @@ function learnt() {
         website look presentable on various screen sizes. Other areas of
         responsive design learnt include usage of responsive units such as rem,
         em vh and vw, and also usage of media queries to allow dynamic font
-        scaling for different screen sizes to allow for the most responsive &
+        scaling for different screen sizes to allow for the most responsive and
         presentable design/interface.
       </p>
       <p className="text-style">
@@ -67,11 +79,14 @@ function resources() {
 }
 
 function github() {
-  return "https://github.com/Jarrettgohh/Jarrettgoh.github.io";
+  return [{ url: "https://github.com/Jarrettgohh/Jarrettgoh.github.io" }];
 }
 
+//eslint-disable-next-line
 export default {
   about,
+  examples,
+  problems,
   learnt,
   resources,
   github,

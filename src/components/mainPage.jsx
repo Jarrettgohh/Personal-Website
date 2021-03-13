@@ -1,5 +1,6 @@
 import React from "react";
 
+import AboutThisWebsite from "./aboutThisWebsite";
 import AboutMyself from "./aboutMyself";
 import ProgrammingProjects from "./programmingProjects";
 import TechStack from "./techStack";
@@ -11,6 +12,9 @@ import Citations from "./citations";
 const MainPage = () => {
   return (
     <>
+      {/* ABOUT THIS WEBSITE */}
+      <AboutThisWebsite />
+
       {/* ABOUT MYSELF */}
       <AboutMyself />
 

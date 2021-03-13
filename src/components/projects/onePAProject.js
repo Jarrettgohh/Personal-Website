@@ -25,6 +25,20 @@ function about() {
   );
 }
 
+function examples() {
+  return [
+    { name: "Let's find some Badminton Courts!", url: "https://youtube.com" },
+  ];
+}
+
+function problems() {
+  return (
+    <>
+      <p className="text-style"></p>
+    </>
+  );
+}
+
 function learnt() {
   return (
     <>
@@ -56,11 +70,19 @@ function resources() {
 }
 
 function github() {
-  return "https://github.com/Jarrettgohh/Onepa-Badminton-Courts-Finder-Python";
+  return [
+    {
+      url:
+        "https://github.com/Jarrettgohh/Onepa-Badminton-Courts-Finder-Python",
+    },
+  ];
 }
 
+//eslint-disable-next-line
 export default {
   about,
+  examples,
+  problems,
   learnt,
   resources,
   github,

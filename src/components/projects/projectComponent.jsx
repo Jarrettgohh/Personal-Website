@@ -2,8 +2,19 @@ import React from "react";
 import { Container, Row } from "react-bootstrap";
 import { GradeOutlined } from "@material-ui/icons";
 import { FaGithub } from "react-icons/fa";
+import { ImNpm } from "react-icons/im";
+import { FiLink } from "react-icons/fi";
 
-const ProjectComponent = ({ name, about, learnt, resources, github }) => {
+const ProjectComponent = ({
+  name,
+  examples,
+  about,
+  problems,
+  learnt,
+  resources,
+  packages,
+  github,
+}) => {
   return (
     <Container fluid className="project-container-style">
       {/* ABOUT THE PROJECT */}
@@ -11,11 +22,34 @@ const ProjectComponent = ({ name, about, learnt, resources, github }) => {
         <h1 className="header-text-lg" style={{ color: "maroon" }}>
           {name}
         </h1>
+        <div style={{ marginLeft: 20 }}>
+          {examples.map((example, index) => {
+            return (
+              <div key={index}>
+                <FiLink size="1.2rem" color="gray" />
+                <a
+                  href={example.url}
+                  style={{ cursor: "pointer" }}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {example.name}
+                </a>
+              </div>
+            );
+          })}
+        </div>
       </Row>
       <Row className="row-padding">
         <h1 className="header-text">About The Project</h1>
       </Row>
       <Row className="row-padding">{about}</Row>
+
+      {/* PROBLEMS FACED */}
+      <Row className="row-padding">
+        <h1 className="header-text">Problems Faced</h1>
+      </Row>
+      <Row className="row-padding">{problems}</Row>
 
       {/* WHAT I HAVE LEARNT */}
       <Row className="row-padding">
@@ -44,17 +78,48 @@ const ProjectComponent = ({ name, about, learnt, resources, github }) => {
         );
       })}
 
+      {/* PUBLISHED PACKAGES */}
+      {packages && (
+        <>
+          <Row className="row-padding" style={{ marginTop: 16 }}>
+            <h1 className="header-text">Published NPM Packages</h1>
+          </Row>
+          {packages.map((NPM, index) => {
+            return (
+              <Row key={index} className="row-padding">
+                <ImNpm size="1.4rem" color="red" />
+
+                <a
+                  className="text-style-lg-italic"
+                  style={{ cursor: "pointer", marginLeft: 8 }}
+                  target="_blank"
+                  rel="noreferrer"
+                  href={NPM.url}
+                >
+                  {NPM.name}
+                </a>
+              </Row>
+            );
+          })}
+        </>
+      )}
+
       {/* GITHUB SOURCE CODE */}
       <Row noGutters={true} className="project-github-row">
         <FaGithub size="1.4rem" />
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href={github}
-          className="project-card-github"
-        >
-          Source Code
-        </a>
+        {github.map((gitItem, index) => {
+          return (
+            <a
+              key={index}
+              target="_blank"
+              rel="noreferrer"
+              href={gitItem.url}
+              className="project-card-github"
+            >
+              {gitItem.name ? gitItem.name : "Source Code"}
+            </a>
+          );
+        })}
       </Row>
     </Container>
   );
