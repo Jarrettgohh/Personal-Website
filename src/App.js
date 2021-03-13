@@ -27,7 +27,6 @@ function App() {
           <Route path="/projects/onepa-badminton-automation">
             <ProjectComponent
               name="onePA Badminton Court Automation"
-              examples={onePAProject.examples()}
               about={onePAProject.about()}
               problems={onePAProject.problems()}
               learnt={onePAProject.learnt()}

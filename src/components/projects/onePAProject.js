@@ -3,7 +3,7 @@ function about() {
     <>
       <p className="text-style">
         I started on this project in June of 2019. As a Badminton player myself,
-        inevitably I have to book courts to play. However, the process of
+        I inevitably have to book courts to play. However, the process of
         finding courts is very painstaking and tedious, as I have to check the
         different locations one by one. The inspiration behind this project is
         to ease the process of finding courts & to also practice on my Python
@@ -25,16 +25,24 @@ function about() {
   );
 }
 
-function examples() {
-  return [
-    { name: "Let's find some Badminton Courts!", url: "https://youtube.com" },
-  ];
-}
-
 function problems() {
   return (
     <>
-      <p className="text-style"></p>
+      <p className="text-style">
+        One problem I faced in this project was not being able to find the URL
+        to send requests to. This is because I found out that the onePA website
+        uses a technology (JQuery if i'm not wrong) to re-render the page
+        everytime a location is selected. Thus, the actual URL which returns the
+        page data couldn't be found from the URL bar. However, I managed to find
+        the URL to send requests to, after inspecting the website source code.
+      </p>
+      <p className="text-style">
+        Another problem I faced is the understanding of syntax that Python uses.
+        This is due to my background in Javascript, with different conventions
+        such as naming of variables, and code syntaxes. However, due to the
+        relatively neat and easy sytnax of Python, I was able to pick it up
+        quickly and get this project done.
+      </p>
     </>
   );
 }
@@ -81,7 +89,6 @@ function github() {
 //eslint-disable-next-line
 export default {
   about,
-  examples,
   problems,
   learnt,
   resources,

@@ -57,7 +57,6 @@ function resources() {
 function github() {
   return [
     {
-      name: "Matrix stuff",
       url: "https://github.com/Jarrettgohh/Cool-Matrix-Stuff",
     },
   ];

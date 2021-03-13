@@ -32,23 +32,25 @@ const ProjectComponent = ({
         <h1 className="header-text-lg" style={{ color: "maroon" }}>
           {name}
         </h1>
-        <div style={{ marginLeft: 20 }}>
-          {examples.map((example, index) => {
-            return (
-              <div key={index}>
-                <FiLink size="1.2rem" color="gray" />
-                <a
-                  href={example.url}
-                  style={{ cursor: "pointer" }}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {example.name}
-                </a>
-              </div>
-            );
-          })}
-        </div>
+        {examples && (
+          <div style={{ marginLeft: 20 }}>
+            {examples.map((example, index) => {
+              return (
+                <div key={index}>
+                  <FiLink size="1.2rem" color="gray" />
+                  <a
+                    href={example.url}
+                    style={{ cursor: "pointer" }}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {example.name}
+                  </a>
+                </div>
+              );
+            })}
+          </div>
+        )}
       </Row>
       <Row className="row-padding">
         <h1 className="header-text">About The Project</h1>
@@ -67,7 +69,7 @@ const ProjectComponent = ({
 
       {/* WHAT I HAVE LEARNT */}
       <Row className="row-padding">
-        <h1 className="header-text">What I have learnt</h1>
+        <h1 className="header-text">What I Have Learnt</h1>
       </Row>
       <Row className="row-padding">{learnt}</Row>
 

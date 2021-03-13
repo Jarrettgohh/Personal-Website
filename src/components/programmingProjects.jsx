@@ -24,6 +24,8 @@ const ProgrammingProjects = () => {
         "Python project using web scraping libraries to automate the boring stuff such as finding of badminton courts!",
       src: "Personal-Website/Web-Crawler.png",
       stack: <FaPython size="1.3rem" color="#FAC308" />,
+      github:
+        "https://github.com/Jarrettgohh/Onepa-Badminton-Courts-Finder-Python",
     },
     {
       id: 2,
@@ -38,6 +40,7 @@ const ProgrammingProjects = () => {
           <FaBootstrap size="1.3rem" color="purple" />
         </>
       ),
+      github: "https://github.com/Jarrettgohh/Jarrettgoh.github.io",
     },
     {
       id: 3,
@@ -93,6 +96,7 @@ const ProgrammingProjects = () => {
           <FaCss3 size="1.3rem" color="blue" />
         </>
       ),
+      github: "https://github.com/Jarrettgohh/Cool-Matrix-Stuff",
     },
   ];
 
@@ -159,15 +163,19 @@ const ProgrammingProjects = () => {
                     {data.description}
                   </Card.Text>
                   <Row noGutters={true} className="project-github-row">
-                    <FaGithub size="1.4rem" />
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://github.com/Jarrettgohh/Onepa-Badminton-Courts-Finder-Python"
-                      className="project-card-github"
-                    >
-                      Source Code
-                    </a>
+                    {data.github && (
+                      <>
+                        <FaGithub size="1.4rem" />
+                        <a
+                          target="_blank"
+                          rel="noreferrer"
+                          href={data.github ? data.github : null}
+                          className="project-card-github"
+                        >
+                          Source Code
+                        </a>
+                      </>
+                    )}
 
                     <div
                       style={{
