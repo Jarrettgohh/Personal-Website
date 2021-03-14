@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 import NavbarComponent from "./components/navbarComponent";
 import MainPage from "./components/mainPage";
-import ProjectComponent from "./components/projects/projectComponent";
+import ProjectComponent from "./components/common/projectComponent";
 
 import onePAProject from "./components/projects/onePAProject.js";
 import mapProjectWebsite from "./components/projects/mapProjectWebsite";
@@ -76,6 +76,7 @@ function App() {
               problems={chatSystem.problems()}
               learnt={chatSystem.learnt()}
               resources={chatSystem.resources()}
+              videos={chatSystem.videos()}
               github={chatSystem.github()}
             />
           </Route>

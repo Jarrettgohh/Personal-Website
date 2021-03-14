@@ -15,8 +15,10 @@ function about() {
         was talking.
       </p>
       <p className="text-style">
-        Click anywhere on the canvas of the binary rain to see the change in
-        color!
+        <strong>
+          Click anywhere on the canvas of the binary rain to see the change in
+          color!
+        </strong>
       </p>
     </>
   );

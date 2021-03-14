@@ -1,6 +1,20 @@
+import AWSVideo from "../../videos/chat-system-AWS.mp4";
+
 function about() {
   return (
     <>
+      <p className="text-style" style={{ fontSize: 36 }}>
+        <strong>
+          NOTE: Either fix bug for AWS version of sometimes not being able to
+          work properly, or put note in website saying "As this project is an
+          experiment, it may sometimes not work as expected, but a reload of the
+          page would make it work, thank you!" ################# NOTE: For
+          Heroku, remove the initial first empty message that gets rendered. And
+          also make the UI appear as one side for sender and receiver, as
+          currently now the message only gets sent on one side as in both
+          screens are orange and on right only.
+        </strong>
+      </p>
       <p className="text-style">
         There are two versions of the chat system, one is hosted with Heroku and
         another with AWS. I started experimenting with real time communication
@@ -94,6 +108,10 @@ function resources() {
   ];
 }
 
+function videos() {
+  return [{ name: "Chat System With AWS", url: AWSVideo }];
+}
+
 function github() {
   return [
     {
@@ -118,5 +136,6 @@ export default {
   problems,
   learnt,
   resources,
+  videos,
   github,
 };

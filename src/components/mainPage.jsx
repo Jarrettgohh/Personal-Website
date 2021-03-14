@@ -1,13 +1,13 @@
 import React from "react";
 
-import AboutThisWebsite from "./aboutThisWebsite";
-import AboutMyself from "./aboutMyself";
-import ProgrammingProjects from "./programmingProjects";
-import TechStack from "./techStack";
-import FutureProjectIdeas from "./futureProjectIdeas";
-import SkillsLearnt from "./skillsLearnt";
-import Certifications from "./certifications";
-import Citations from "./citations";
+import AboutThisWebsite from "./main/aboutThisWebsite";
+import AboutMyself from "./main/aboutMyself";
+import ProgrammingProjects from "./main/programmingProjects";
+import TechStack from "./main/techStack";
+import FutureProjectIdeas from "./main/futureProjectIdeas";
+import SkillsLearnt from "./main/skillsLearnt";
+import Certifications from "./main/certifications";
+import Citations from "./main/citations";
 
 const MainPage = () => {
   return (
