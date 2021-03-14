@@ -75,6 +75,7 @@ const ProgrammingProjects = () => {
       src: "Personal-Website/Chat-System-Icon.png",
       stack: (
         <>
+          <FaReact size="1.3rem" color="#08DDFA" />
           <FaNodeJs size="1.3rem" color="green" />
           <SiSocketDotIo size="1.3rem" color="gray" />
           <SiHeroku size="1.3rem" color="purple" />
