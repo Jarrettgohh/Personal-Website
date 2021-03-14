@@ -1,3 +1,7 @@
+function note() {
+  return "This project is not completed, as its a relatively new one and I'm still experimenting with it ;)";
+}
+
 function about() {
   return (
     <>
@@ -12,14 +16,17 @@ function about() {
   );
 }
 
-function examples() {
-  return [{ name: "Map some activities!", url: "https://youtube.com" }];
-}
-
 function problems() {
   return (
     <>
-      <p className="text-style"></p>
+      <p className="text-style">
+        A problem I faced while working on this project was learning the design
+        structure/convention of mobile apps. React Native uses a styling
+        method/syntax that is similar to React Js which uses CSS for its
+        designs, but is not entirely the same as the structure is a little
+        different. Thus a problem that I had to deal with was to get used to the
+        way React Native styling works.
+      </p>
     </>
   );
 }
@@ -28,10 +35,19 @@ function learnt() {
   return (
     <>
       <p className="text-style">
-        From this project, I have learnt that for a particular project; with
-        mobile and website requirements, the same backend server used for
-        websites can be used for the mobile version too. This is due to the
-        basis of RESTful APIs that would query the same url endpoints.
+        From this project, I have learnt the design structure for mobile apps
+        and how it differs from websites. Due to my past knowledge in React Js,
+        I managed to understand React Native relatively fast and a framework
+        that I have learnt too is Expo. React Native allowed me to not deal with
+        native languages such as Swift/Obj-c and Java/Kotlin, however I have
+        learnt a little of them to understand how React Native itself works too,
+        due to it being built on top of native langugages.
+      </p>
+      <p className="text-style">
+        I have also learnt that for a particular project; with mobile and
+        website requirements, the same backend server used for websites can be
+        used for the mobile version too. This is due to the basis of RESTful
+        APIs that would query the same url endpoints.
       </p>
     </>
   );
@@ -62,8 +78,8 @@ function github() {
 
 //eslint-disable-next-line
 export default {
+  note,
   about,
-  examples,
   problems,
   learnt,
   resources,

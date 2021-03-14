@@ -1,5 +1,9 @@
 import AWSVideo from "../../videos/chat-system-AWS.mp4";
 
+function note() {
+  return "The chat system for AWS project is an experiment, it may not work as expected sometimes. However a reload of the page should make it work, thank you! Do check out the video example at the bottom :)";
+}
+
 function about() {
   return (
     <>
@@ -105,6 +109,10 @@ function resources() {
       url:
         "https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/ApiGatewayManagementApi.html",
     },
+    {
+      name: "Socket.io",
+      url: "https://socket.io/docs/v3",
+    },
   ];
 }
 
@@ -131,6 +139,7 @@ function github() {
 
 //eslint-disable-next-line
 export default {
+  note,
   about,
   examples,
   problems,

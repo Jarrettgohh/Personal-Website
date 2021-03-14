@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 import NavbarComponent from "./components/navbarComponent";
 import MainPage from "./components/mainPage";
-import ProjectComponent from "./components/common/projectComponent";
+import ProjectPage from "./components/common/projectPage";
 
 import onePAProject from "./components/projects/onePAProject.js";
 import mapProjectWebsite from "./components/projects/mapProjectWebsite";
@@ -25,7 +25,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route path="/projects/onepa-badminton-automation">
-            <ProjectComponent
+            <ProjectPage
               name="onePA Badminton Court Automation"
               about={onePAProject.about()}
               problems={onePAProject.problems()}
@@ -35,7 +35,8 @@ function App() {
             />
           </Route>
           <Route path="/projects/map-project-website">
-            <ProjectComponent
+            <ProjectPage
+              note={mapProjectWebsite.note()}
               name="Map Project Website"
               examples={mapProjectWebsite.examples()}
               about={mapProjectWebsite.about()}
@@ -46,9 +47,9 @@ function App() {
             />
           </Route>
           <Route path="/projects/map-project-app">
-            <ProjectComponent
+            <ProjectPage
+              note={mapProjectApp.note()}
               name="Map Project App"
-              examples={mapProjectApp.examples()}
               about={mapProjectApp.about()}
               problems={mapProjectApp.problems()}
               learnt={mapProjectApp.learnt()}
@@ -58,7 +59,7 @@ function App() {
             />
           </Route>
           <Route path="/projects/mini-games">
-            <ProjectComponent
+            <ProjectPage
               name="Mini Browser Games"
               examples={miniGames.examples()}
               about={miniGames.about()}
@@ -69,7 +70,8 @@ function App() {
             />
           </Route>
           <Route path="/projects/simple-chat-system">
-            <ProjectComponent
+            <ProjectPage
+              note={chatSystem.note()}
               name="Chat System"
               examples={chatSystem.examples()}
               about={chatSystem.about()}
@@ -81,7 +83,8 @@ function App() {
             />
           </Route>
           <Route path="/projects/binary-rain">
-            <ProjectComponent
+            <ProjectPage
+              note={matrixStuff.note()}
               name="Cool Matrix Stuff"
               examples={matrixStuff.examples()}
               about={matrixStuff.about()}

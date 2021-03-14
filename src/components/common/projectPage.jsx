@@ -6,8 +6,9 @@ import { ImNpm } from "react-icons/im";
 import { FiLink } from "react-icons/fi";
 import ReactPlayer from "react-player";
 
-const ProjectComponent = ({
+const ProjectPage = ({
   name,
+  note,
   examples,
   about,
   problems,
@@ -29,11 +30,13 @@ const ProjectComponent = ({
       {/* TOP ROW AS A WORKAROUND, BECAUSE PAGE ALWAYS NOT AT TOP ON RENDER */}
       <Row ref={topRow} />
 
-      {/* ABOUT THE PROJECT */}
+      {/* PROJECT NAME */}
       <Row className="row-padding" style={{ borderBottom: "2px solid silver" }}>
         <h1 className="header-text-lg" style={{ color: "maroon" }}>
           {name}
         </h1>
+
+        {/* EXAMPLES */}
         {examples && (
           <div style={{ marginLeft: 20 }}>
             {examples.map((example, index) => {
@@ -53,7 +56,14 @@ const ProjectComponent = ({
             })}
           </div>
         )}
+        {note && (
+          <div>
+            <h5 style={{ margin: 20 }}>{`P.S ${note}`}</h5>{" "}
+          </div>
+        )}
       </Row>
+
+      {/* ABOUT THE PROJECT */}
       <Row className="row-padding">
         <h1 className="header-text">About The Project</h1>
       </Row>
@@ -168,4 +178,4 @@ const ProjectComponent = ({
   );
 };
 
-export default ProjectComponent;
+export default ProjectPage;

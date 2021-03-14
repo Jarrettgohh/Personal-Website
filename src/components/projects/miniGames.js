@@ -26,7 +26,9 @@ function examples() {
 function problems() {
   return (
     <>
-      <p className="text-style"></p>
+      <p className="text-style">
+        A problem I faced while working on this project was
+      </p>
     </>
   );
 }

@@ -1,3 +1,7 @@
+function note() {
+  return "Click anywhere on the canvas of the binary rain to see the change in color!";
+}
+
 function about() {
   return (
     <>
@@ -13,12 +17,6 @@ function about() {
         I also tried to make the cool text animation effect, where the text
         would appear on its own in a certain manner; appearing like the computer
         was talking.
-      </p>
-      <p className="text-style">
-        <strong>
-          Click anywhere on the canvas of the binary rain to see the change in
-          color!
-        </strong>
       </p>
     </>
   );
@@ -37,10 +35,11 @@ function learnt() {
   return (
     <>
       <p className="text-style">
-        From this project, I have learnt learn how to better utilise Javascript
-        functions. Another important skill I have learnt is how Javascript is
-        able to be linked and communicate with HTML to control how the elements
-        are rendered.
+        From this project, I have learnt how to better utilise Javascript
+        methods such as loops so as to allow for the effects that are rendered.
+        Another important skill I have learnt is how Javascript is able to be
+        linked and communicate with HTML to control how the elements are
+        rendered.
       </p>
       <p className="text-style"></p>
     </>
@@ -66,6 +65,7 @@ function github() {
 
 //eslint-disable-next-line
 export default {
+  note,
   about,
   examples,
   learnt,
