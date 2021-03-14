@@ -1,3 +1,7 @@
+function note() {
+  return "This was my first actual serious programming project that I have worked on, thus there may be some bad practices in the codes and other flaws too.";
+}
+
 function about() {
   return (
     <>
@@ -27,7 +31,18 @@ function problems() {
   return (
     <>
       <p className="text-style">
-        A problem I faced while working on this project was
+        A problem I faced while working on this project was understanding how
+        Javascript works to communicate with HTML and how it can be used to
+        render animations on the screen. Due to the nature of user input games,
+        another issue I faced was on how to link the user inputs with the
+        movements of game characters.
+      </p>
+      <p className="text-style">
+        As the first few examples of games I made are just made up of colored
+        boxes made with simple CSS, I found it a little boring. Thus, I wanted
+        to use images instead. However, this brought another problem, where the
+        images must be cropped properly and coordinated for the animation of the
+        images to work.
       </p>
     </>
   );
@@ -78,6 +93,7 @@ function github() {
 
 //eslint-disable-next-line
 export default {
+  note,
   about,
   examples,
   problems,

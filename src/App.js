@@ -60,6 +60,7 @@ function App() {
           </Route>
           <Route path="/projects/mini-games">
             <ProjectPage
+              note={miniGames.note()}
               name="Mini Browser Games"
               examples={miniGames.examples()}
               about={miniGames.about()}

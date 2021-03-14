@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
+import { FaGithub } from "react-icons/fa";
 
 const AboutThisWebsite = () => {
   return (
@@ -15,6 +16,18 @@ const AboutThisWebsite = () => {
           at old projects but still be able to understand how they work and
           various technologies/stacks/languages involved.
         </p>
+      </Row>
+      <Row className="row-padding">
+        <FaGithub size="1.5rem" />
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/Jarrettgohh/Personal-Website"
+        >
+          <p className="text-style-lg-italic" style={{ marginLeft: "0.6rem" }}>
+            <strong>Source code for this website</strong>
+          </p>
+        </a>
       </Row>
     </Container>
   );

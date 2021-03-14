@@ -8,7 +8,7 @@ function about() {
       <p className="text-style">
         This website provides a simple platform for users to place activities on
         a map for others to find and join them. I started on this project in
-        July-August of 2020 after I finished a course on a React Js course. As
+        September of 2020 after I finished a course on a React Js course. As
         this was my first website project using React, I was able to experience
         the basic web development experince processes such as planning of
         design, implementation of it and to refactor the code to make them more

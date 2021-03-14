@@ -24,16 +24,16 @@ function about() {
         another with AWS. I started experimenting with real time communication
         with web sockets using the Socket.io library in Node Js locally first,
         before hosting it on the cloud with Heroku afterwards. This was in
-        June-July of 2020.
+        October of 2020.
       </p>
       <p className="text-style">
-        I started trying to host it with AWS in September-October of 2020 after
-        learning the basics of web hosting for both front and backend on AWS
-        Amplify using the lambda functions. Chat systems have always amazed me,
-        and I have always wondered how it works with the real time
-        communication, updates and all. Thus, this project gave me an insightful
-        experience into the workings/technologies behind web sockets and how it
-        is used to provide real time functionalities.
+        I started trying to host it with AWS in November of 2020 after learning
+        the basics of web hosting for both front and backend on AWS Amplify
+        using the lambda functions. Chat systems have always amazed me, and I
+        have always wondered how it works with the real time communication,
+        updates and all. Thus, this project gave me an insightful experience
+        into the workings/technologies behind web sockets and how it is used to
+        provide real time functionalities.
       </p>
     </>
   );

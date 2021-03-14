@@ -2,11 +2,14 @@ function about() {
   return (
     <>
       <p className="text-style">
-        I started on this project in June of 2019. As a Badminton player myself,
-        I inevitably have to book courts to play. However, the process of
-        finding courts is very painstaking and tedious, as I have to check the
-        different locations one by one. The inspiration behind this project is
-        to ease the process of finding courts & to also practice on my Python
+        I started on this project in about July-August of 2020, after
+        Singapore's Circuit breaker for the COVID-19 pandemic. This project was
+        intended as a means to practice my Python skills, but not for usage, due
+        to situation where we couldn't play any sports. As a Badminton player
+        myself, I inevitably have to book courts to play. However, the process
+        of finding courts is very painstaking and tedious, as I have to check
+        the different locations one by one. The inspiration behind this project
+        is to ease the process of finding courts & to also practice on my Python
         skills.
       </p>
       <p className="text-style">
