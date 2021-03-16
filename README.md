@@ -19,7 +19,7 @@ Expected behavior ==> Open github repo, but page remains.
 
 ####
 ####
-Add 'Tech Stack' row to the 'Skills Learnt' row. Replace ul dots with tick signs.
+Images not appearing when hosted on cloud with gh pages.
 
 
 
