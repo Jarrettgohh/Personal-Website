@@ -5,6 +5,8 @@ import { FaGithub } from "react-icons/fa";
 import { ImNpm } from "react-icons/im";
 import { FiLink } from "react-icons/fi";
 import ReactPlayer from "react-player";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 const ProjectPage = ({
   name,
@@ -13,6 +15,7 @@ const ProjectPage = ({
   about,
   problems,
   learnt,
+  tech,
   resources,
   packages,
   videos,
@@ -58,7 +61,9 @@ const ProjectPage = ({
         )}
         {note && (
           <div>
-            <h5 style={{ margin: 20 }}>{`P.S ${note}`}</h5>{" "}
+            <h6 style={{ margin: 20 }}>
+              <strong>{`P.S ${note}`}</strong>
+            </h6>
           </div>
         )}
       </Row>
@@ -84,6 +89,30 @@ const ProjectPage = ({
         <h1 className="header-text">What I Have Learnt</h1>
       </Row>
       <Row className="row-padding">{learnt}</Row>
+
+      {/* TECH STACK */}
+      <Row className="row-padding">
+        <h1 className="header-text">Tech Stack</h1>
+      </Row>
+      <Row className="row-padding">
+        <Col>
+          {tech &&
+            tech.map((stack, index) => {
+              return (
+                <Row key={index} style={{ width: "30vw" }}>
+                  <Col xs={1} xl={1}>
+                    <FontAwesomeIcon icon={faCheck} color="lime" />
+                  </Col>
+                  <Col xs={11} xl={11}>
+                    <p className="text-style">
+                      <strong>{stack}</strong>
+                    </p>
+                  </Col>
+                </Row>
+              );
+            })}
+        </Col>
+      </Row>
 
       {/* LEARNING RESOURCES */}
       <Row className="row-padding">

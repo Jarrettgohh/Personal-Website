@@ -46,6 +46,10 @@ function learnt() {
   );
 }
 
+function tech() {
+  return ["Javascript", "HTML", "CSS"];
+}
+
 function resources() {
   return [
     {
@@ -69,6 +73,7 @@ export default {
   about,
   examples,
   learnt,
+  tech,
   resources,
   github,
 };

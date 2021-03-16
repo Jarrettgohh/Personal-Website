@@ -53,6 +53,10 @@ function learnt() {
   );
 }
 
+function tech() {
+  return ["React Native", "Expo", "Node Js"];
+}
+
 function resources() {
   return [
     {
@@ -83,6 +87,7 @@ export default {
   problems,
   learnt,
   resources,
+  tech,
   github,
   packages,
 };

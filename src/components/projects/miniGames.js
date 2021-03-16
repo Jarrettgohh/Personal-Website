@@ -70,6 +70,10 @@ function learnt() {
   );
 }
 
+function tech() {
+  return ["Javascript", "HTML", "CSS"];
+}
+
 function resources() {
   return [
     {
@@ -98,6 +102,7 @@ export default {
   examples,
   problems,
   learnt,
+  tech,
   resources,
   github,
 };

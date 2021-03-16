@@ -1,31 +1,36 @@
 function note() {
-  return "The activities shown on the website are not actual activites and are made up by me :)";
+  return "The activities shown on the website are not actual activites and are made up by me :) There may also be some missing features that are not yet added (Stated in github source README.MD) I have also experimented with building a marker clustering effect ==> Check it out here";
 }
 
 function about() {
   return (
     <>
       <p className="text-style">
-        This website provides a simple platform for users to place activities on
-        a map for others to find and join them. I started on this project in
-        September of 2020 after I finished a course on a React Js course. As
-        this was my first website project using React, I was able to experience
-        the basic web development experince processes such as planning of
-        design, implementation of it and to refactor the code to make them more
-        readable by other developers. This project includes good and industry
-        standard practices such as clean code syntaxing, reusable component,
-        responsive/clean design using React-Bootstrap and basic web security
-        such as usage of JWT. After finishing on the frontend of this project, I
-        went on to take a Node Js course to develop the backend. Despite
-        imperfections in areas, I would strive to make it better by continue
-        researching and improving on my web development workflow.
+        This website provides a simple platform for users to place
+        events/activities on a map for others to find and join them. I started
+        on this project in September of 2020 after I finished a course on a
+        React Js course. As this was my first website project using React, I was
+        able to experience the basic web development experince processes such as
+        planning of design, implementation of it and to refactor the code to
+        make them more readable by other developers. This project includes good
+        and industry standard practices such as clean code syntaxing, reusable
+        component, responsive/clean design using React-Bootstrap and basic web
+        security such as usage of JWT. After finishing on the frontend of this
+        project, I went on to take a Node Js course to develop the backend.
+        Despite imperfections in areas, I would strive to make it better by
+        continue researching and improving on my web development workflow.
       </p>
     </>
   );
 }
 
 function examples() {
-  return [{ name: "Map some activities!", url: "https://youtube.com" }];
+  return [
+    {
+      name: "Map some events!",
+      url: "https://master.d3efc33hfmb8o4.amplifyapp.com",
+    },
+  ];
 }
 
 function problems() {
@@ -70,13 +75,32 @@ function learnt() {
         data/requests from server through the use of signatures.
       </p>
       <p className="text-style">
+        In this project I first experimented with connection to MongoDB through
+        NodeJs. However, I later decided to switch the database system to
+        DynamoDB by AWS instead. This was due to various reasons, namely the
+        pricing and also the backup system available; just to name a few. Thus,
+        from working on this, I have learnt various skills such as backend
+        server and database management and also how the backend server receives
+        or queries these data between the database system.
+      </p>
+      <p className="text-style">
         Another key takeaway from this project would be that I have developed a
         deeper understanding of how API works through the use of Google Maps
-        Javascript API to display a map on the website. I have experimented with
-        building an NPM package to display google maps.
+        Javascript API to display a map on the website.
       </p>
     </>
   );
+}
+
+function tech() {
+  return [
+    "React Js",
+    "Node Js",
+    "React Bootstrap",
+    "AWS Amplify",
+    "AWS Lambda Functions",
+    "AWS DynamoDB",
+  ];
 }
 
 function resources() {
@@ -107,6 +131,7 @@ export default {
   examples,
   problems,
   learnt,
+  tech,
   resources,
   github,
 };

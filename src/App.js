@@ -30,6 +30,7 @@ function App() {
               about={onePAProject.about()}
               problems={onePAProject.problems()}
               learnt={onePAProject.learnt()}
+              tech={onePAProject.tech()}
               resources={onePAProject.resources()}
               github={onePAProject.github()}
             />
@@ -42,6 +43,7 @@ function App() {
               about={mapProjectWebsite.about()}
               problems={mapProjectWebsite.problems()}
               learnt={mapProjectWebsite.learnt()}
+              tech={mapProjectWebsite.tech()}
               resources={mapProjectWebsite.resources()}
               github={mapProjectWebsite.github()}
             />
@@ -53,6 +55,7 @@ function App() {
               about={mapProjectApp.about()}
               problems={mapProjectApp.problems()}
               learnt={mapProjectApp.learnt()}
+              tech={mapProjectApp.tech()}
               resources={mapProjectApp.resources()}
               packages={mapProjectApp.packages()}
               github={mapProjectApp.github()}
@@ -66,6 +69,7 @@ function App() {
               about={miniGames.about()}
               problems={miniGames.problems()}
               learnt={miniGames.learnt()}
+              tech={miniGames.tech()}
               resources={miniGames.resources()}
               github={miniGames.github()}
             />
@@ -78,18 +82,20 @@ function App() {
               about={chatSystem.about()}
               problems={chatSystem.problems()}
               learnt={chatSystem.learnt()}
+              tech={chatSystem.tech()}
               resources={chatSystem.resources()}
               videos={chatSystem.videos()}
               github={chatSystem.github()}
             />
           </Route>
-          <Route path="/projects/binary-rain">
+          <Route path="/projects/matrix-stuff">
             <ProjectPage
               note={matrixStuff.note()}
               name="Cool Matrix Stuff"
               examples={matrixStuff.examples()}
               about={matrixStuff.about()}
               learnt={matrixStuff.learnt()}
+              tech={matrixStuff.tech()}
               resources={matrixStuff.resources()}
               github={matrixStuff.github()}
             />

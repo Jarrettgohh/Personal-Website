@@ -70,6 +70,10 @@ function learnt() {
   );
 }
 
+function tech() {
+  return ["Python", "Requests", "Beatiful Soup 4"];
+}
+
 function resources() {
   return [
     { name: "Requests", url: "https://requests.readthedocs.io/en/master/" },
@@ -94,6 +98,7 @@ export default {
   about,
   problems,
   learnt,
+  tech,
   resources,
   github,
 };

@@ -1,24 +1,12 @@
 import AWSVideo from "../../videos/chat-system-AWS.mp4";
 
 function note() {
-  return "The chat system for AWS project is an experiment, it may not work as expected sometimes. However a reload of the page should make it work, thank you! Do check out the video example at the bottom :)";
+  return "The chat system for AWS project is an experiment, it may not work as expected sometimes. However a reload of the page should make it work, thank you! Do check out the video example at the bottom :) As for the chat system hosted with Heroku, the UI may be a little funny, however it would still work but just be a little slow due to the server location.";
 }
 
 function about() {
   return (
     <>
-      <p className="text-style" style={{ fontSize: 36 }}>
-        <strong>
-          NOTE: Either fix bug for AWS version of sometimes not being able to
-          work properly, or put note in website saying "As this project is an
-          experiment, it may sometimes not work as expected, but a reload of the
-          page would make it work, thank you!" ################# NOTE: For
-          Heroku, remove the initial first empty message that gets rendered. And
-          also make the UI appear as one side for sender and receiver, as
-          currently now the message only gets sent on one side as in both
-          screens are orange and on right only.
-        </strong>
-      </p>
       <p className="text-style">
         There are two versions of the chat system, one is hosted with Heroku and
         another with AWS. I started experimenting with real time communication
@@ -97,6 +85,18 @@ function learnt() {
   );
 }
 
+function tech() {
+  return [
+    "React Js",
+    "Node Js",
+    "Socket.io",
+    "Heroku",
+    "AWS Amplify",
+    "AWS lambda function",
+    "MongoDB",
+  ];
+}
+
 function resources() {
   return [
     {
@@ -144,6 +144,7 @@ export default {
   examples,
   problems,
   learnt,
+  tech,
   resources,
   videos,
   github,

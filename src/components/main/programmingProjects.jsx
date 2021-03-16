@@ -11,7 +11,7 @@ import {
   FaCss3,
   FaJs,
 } from "react-icons/fa";
-import { SiHeroku, SiSocketDotIo, SiExpo } from "react-icons/si";
+import { SiHeroku, SiSocketDotIo, SiExpo, SiMongodb } from "react-icons/si";
 import { useHistory } from "react-router-dom";
 
 const ProgrammingProjects = () => {
@@ -38,6 +38,7 @@ const ProgrammingProjects = () => {
           <FaReact size="1.3rem" color="#08DDFA" />
           <FaNodeJs size="1.3rem" color="green" />
           <FaBootstrap size="1.3rem" color="purple" />
+          <FaAws size="1.3rem" color="#AA9939" />
         </>
       ),
       github: "https://github.com/Jarrettgohh/Jarrettgoh.github.io",
@@ -80,6 +81,7 @@ const ProgrammingProjects = () => {
           <SiSocketDotIo size="1.3rem" color="gray" />
           <SiHeroku size="1.3rem" color="purple" />
           <FaAws size="1.3rem" color="#AA9939" />
+          <SiMongodb size="1.3rem" color="green" />
         </>
       ),
     },
@@ -126,7 +128,7 @@ const ProgrammingProjects = () => {
         return "simple-chat-system";
 
       case 6:
-        return "binary-rain";
+        return "matrix-stuff";
 
       default:
         break;
