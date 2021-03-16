@@ -22,7 +22,7 @@ const MainPage = () => {
       <ProgrammingProjects />
 
       {/* TECHSTACK*/}
-      <TechStack />
+      {/* <TechStack /> */}
 
       {/* FUTURE PROJECT IDEAS */}
       <FutureProjectIdeas />

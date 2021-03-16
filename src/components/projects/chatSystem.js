@@ -93,6 +93,7 @@ function tech() {
     "Heroku",
     "AWS Amplify",
     "AWS lambda function",
+    "AWS Websocket API Gateway",
     "MongoDB",
   ];
 }
