@@ -22,7 +22,7 @@ const ProgrammingProjects = () => {
       name: "onePA Badminton Courts Automation",
       description:
         "Python project using web scraping libraries to automate the boring stuff such as finding of badminton courts!",
-      src: "Personal-Website/Web-Crawler.png",
+      src: "Web-Crawler.png",
       stack: <FaPython size="1.3rem" color="#FAC308" />,
       github:
         "https://github.com/Jarrettgohh/Onepa-Badminton-Courts-Finder-Python",
@@ -32,7 +32,7 @@ const ProgrammingProjects = () => {
       name: "Map Project Website",
       description:
         "Simple website project to allow users to place activities on maps!",
-      src: "Personal-Website/Map.png",
+      src: "Map.png",
       stack: (
         <>
           <FaReact size="1.3rem" color="#08DDFA" />
@@ -47,7 +47,7 @@ const ProgrammingProjects = () => {
       id: 3,
       name: "Map Project App",
       description: "Mobile App version of the map project website.",
-      src: "Personal-Website/Map-App.png",
+      src: "Map-App.png",
       stack: (
         <>
           <SiExpo size="1.3rem" color="black" />
@@ -60,7 +60,7 @@ const ProgrammingProjects = () => {
       id: 4,
       name: "Mini Games",
       description: "Mini experimental games made on the browser!",
-      src: "Personal-Website/Games.png",
+      src: "Games.png",
       stack: (
         <>
           <FaJs size="1.3rem" color="#FFD900" />
@@ -73,7 +73,7 @@ const ProgrammingProjects = () => {
       id: 5,
       name: "Simple Chat System",
       description: "Chat system for real time communication!",
-      src: "Personal-Website/Chat-System-Icon.png",
+      src: "Chat-System-Icon.png",
       stack: (
         <>
           <FaReact size="1.3rem" color="#08DDFA" />
@@ -90,7 +90,7 @@ const ProgrammingProjects = () => {
       name: "Cool Matrix Stuff",
       description:
         "Binary Falling screen with different colors, and animated text!",
-      src: "Personal-Website/Binary-Rain.png",
+      src: "Binary-Rain.png",
       fullWidth: true,
       stack: (
         <>

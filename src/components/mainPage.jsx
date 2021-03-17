@@ -3,7 +3,7 @@ import React from "react";
 import AboutThisWebsite from "./main/aboutThisWebsite";
 import AboutMyself from "./main/aboutMyself";
 import ProgrammingProjects from "./main/programmingProjects";
-import TechStack from "./main/techStack";
+// import TechStack from "./main/techStack";
 import FutureProjectIdeas from "./main/futureProjectIdeas";
 import SkillsLearnt from "./main/skillsLearnt";
 import Certifications from "./main/certifications";
