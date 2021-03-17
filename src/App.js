@@ -78,7 +78,7 @@ function App() {
             <ProjectPage
               note={chatSystem.note()}
               name="Chat System"
-              examples={chatSystem.examples()}
+              // examples={chatSystem.examples()}
               about={chatSystem.about()}
               problems={chatSystem.problems()}
               learnt={chatSystem.learnt()}
