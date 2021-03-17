@@ -27,14 +27,14 @@ function about() {
   );
 }
 
-// function examples() {
-//   return [
-//     {
-//       name: "Chat System AWS",
-//       url: "https://master.d2aw5uc742d1w4.amplifyapp.com/",
-//     },
-//   ];
-// }
+function examples() {
+  return [
+    {
+      name: "Chat System AWS",
+      url: "https://master.d2aw5uc742d1w4.amplifyapp.com/",
+    },
+  ];
+}
 
 function problems() {
   return (
@@ -117,32 +117,32 @@ function videos() {
   return [{ name: "Chat System With AWS", url: AWSVideo }];
 }
 
-function github() {
-  return [
-    {
-      name: "Hosted with AWS",
-      url: "https://github.com/Jarrettgohh/Chat-System-AWS-Amplify",
-    },
-    {
-      name: "Frontend hosted with Heroku",
-      url: "https://github.com/Jarrettgohh/Chat-System-Heroku",
-    },
-    {
-      name: "Backend hosted with Heroku",
-      url: "https://github.com/Jarrettgohh/Chat-System-Backend-Heroku",
-    },
-  ];
-}
+// function github() {
+//   return [
+//     {
+//       name: "Hosted with AWS",
+//       url: "https://github.com/Jarrettgohh/Chat-System-AWS-Amplify",
+//     },
+//     {
+//       name: "Frontend hosted with Heroku",
+//       url: "https://github.com/Jarrettgohh/Chat-System-Heroku",
+//     },
+//     {
+//       name: "Backend hosted with Heroku",
+//       url: "https://github.com/Jarrettgohh/Chat-System-Backend-Heroku",
+//     },
+//   ];
+// }
 
 //eslint-disable-next-line
 export default {
   note,
   about,
-  // examples,
+  examples,
   problems,
   learnt,
   tech,
   resources,
   videos,
-  github,
+  // github,
 };

@@ -187,22 +187,24 @@ const ProjectPage = ({
       )}
 
       {/* GITHUB SOURCE CODE */}
-      <Row noGutters={true} className="project-github-row">
-        <FaGithub size="1.4rem" />
-        {github.map((gitItem, index) => {
-          return (
-            <a
-              key={index}
-              target="_blank"
-              rel="noreferrer"
-              href={gitItem.url}
-              className="project-card-github"
-            >
-              {gitItem.name ? gitItem.name : "Source Code"}
-            </a>
-          );
-        })}
-      </Row>
+      {github && (
+        <Row noGutters={true} className="project-github-row">
+          <FaGithub size="1.4rem" />
+          {github.map((gitItem, index) => {
+            return (
+              <a
+                key={index}
+                target="_blank"
+                rel="noreferrer"
+                href={gitItem.url}
+                className="project-card-github"
+              >
+                {gitItem.name ? gitItem.name : "Source Code"}
+              </a>
+            );
+          })}
+        </Row>
+      )}
     </Container>
   );
 };

@@ -78,14 +78,14 @@ function App() {
             <ProjectPage
               note={chatSystem.note()}
               name="Chat System"
-              // examples={chatSystem.examples()}
+              examples={chatSystem.examples()}
               about={chatSystem.about()}
               problems={chatSystem.problems()}
               learnt={chatSystem.learnt()}
               tech={chatSystem.tech()}
               resources={chatSystem.resources()}
               videos={chatSystem.videos()}
-              github={chatSystem.github()}
+              // github={chatSystem.github()}
             />
           </Route>
           <Route path="/projects/matrix-stuff">
