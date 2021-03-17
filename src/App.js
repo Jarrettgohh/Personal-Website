@@ -65,7 +65,7 @@ function App() {
             <ProjectPage
               note={miniGames.note()}
               name="Mini Browser Games"
-              examples={miniGames.examples()}
+              // examples={miniGames.examples()}
               about={miniGames.about()}
               problems={miniGames.problems()}
               learnt={miniGames.learnt()}
