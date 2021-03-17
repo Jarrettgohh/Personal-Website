@@ -24,7 +24,12 @@ function about() {
 }
 
 function examples() {
-  return [{ name: "Move some characters!", url: "https://youtube.com" }];
+  return [
+    {
+      name: "Move some characters in a mini Warcraft 2 game!",
+      url: "https://jarrettgohh.github.io/Warcraft-Game-Project/",
+    },
+  ];
 }
 
 function problems() {
