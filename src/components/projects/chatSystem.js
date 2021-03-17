@@ -1,7 +1,7 @@
 import AWSVideo from "../../videos/chat-system-AWS.mp4";
 
 function note() {
-  return "The chat system for AWS project is an experiment, it may not work as expected sometimes. However a reload of the page should make it work, thank you! Do check out the video example at the bottom :) As for the chat system hosted with Heroku, the UI may be a little funny, however it would still work but just be a little slow due to the server location.";
+  return "The chat system for AWS project is an experiment, it may not work as expected sometimes. However a reload of the page should make it work, thank you! Do check out the video example at the bottom :) Due to some flaws for the Heroku version, it would not be shown yet.";
 }
 
 function about() {
@@ -32,10 +32,6 @@ function examples() {
     {
       name: "Chat System AWS",
       url: "https://master.d2aw5uc742d1w4.amplifyapp.com/",
-    },
-    {
-      name: "Chat system Heroku",
-      url: "https://mapitin-chat.herokuapp.com/",
     },
   ];
 }
