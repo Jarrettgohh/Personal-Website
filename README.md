@@ -2,7 +2,8 @@
 
 Personal website to showcase my current & future projects with source codes for some.
 
-# URL EXTENSION "/Personal-Website/" instead of "/Personal-Website" else image would not load.
+# TO NOTE 
+URL EXTENSION "/Personal-Website/" instead of "/Personal-Website" else image would not load.
 
 # TECHNOLOGY USED
 
