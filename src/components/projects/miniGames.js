@@ -1,5 +1,5 @@
 function note() {
-  return "This was my first actual serious programming project that I have worked on, thus there may be some bad practices in the codes and other flaws too.";
+  return "This was my first actual serious programming project that I have worked on, thus there may be some bad practices in the codes and other flaws too. Would add test and video examples soon ;)";
 }
 
 function about() {
@@ -23,14 +23,14 @@ function about() {
   );
 }
 
-function examples() {
-  return [
-    {
-      name: "Move some characters in a mini Warcraft 2 game!",
-      url: "https://jarrettgohh.github.io/Warcraft-Game-Project/",
-    },
-  ];
-}
+// function examples() {
+//   return [
+//     {
+//       name: "Move some characters in a mini Warcraft 2 game!",
+//       url: "https://jarrettgohh.github.io/Warcraft-Game-Project/",
+//     },
+//   ];
+// }
 
 function problems() {
   return (
@@ -104,7 +104,7 @@ function github() {
 export default {
   note,
   about,
-  examples,
+  // examples,
   problems,
   learnt,
   tech,
