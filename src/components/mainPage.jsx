@@ -31,7 +31,7 @@ const MainPage = () => {
       <SkillsLearnt />
 
       {/* CERTIFICATIONS */}
-      <Certifications />
+      {/* <Certifications /> */}
 
       {/* Citations */}
       <Citations />

@@ -5,7 +5,7 @@ import { FaGithub, FaNpm, FaStackOverflow } from "react-icons/fa";
 const NavbarComponent = () => {
   return (
     <Navbar expand="lg" sticky="top" variant="dark" className="navbar-style">
-      <Navbar.Brand href="/Personal-Website" className="navbar-brand">
+      <Navbar.Brand href="/Personal-Website/" className="navbar-brand">
         Jarrett Goh
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />

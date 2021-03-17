@@ -102,7 +102,7 @@ function App() {
           </Route>
 
           {/* MAIN PAGE */}
-          <Route path="/">
+          <Route path="/Personal-Website/">
             <MainPage />
           </Route>
 
