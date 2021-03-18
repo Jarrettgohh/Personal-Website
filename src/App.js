@@ -45,7 +45,7 @@ function App() {
               learnt={mapProjectWebsite.learnt()}
               tech={mapProjectWebsite.tech()}
               resources={mapProjectWebsite.resources()}
-              github={mapProjectWebsite.github()}
+              // github={mapProjectWebsite.github()}
             />
           </Route>
           <Route path="/projects/map-project-app">
