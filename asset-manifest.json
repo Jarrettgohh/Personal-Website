@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Personal-Website/static/css/main.4c2fabe9.chunk.css",
-    "main.js": "/Personal-Website/static/js/main.24e7b2f1.chunk.js",
-    "main.js.map": "/Personal-Website/static/js/main.24e7b2f1.chunk.js.map",
+    "main.js": "/Personal-Website/static/js/main.895e7236.chunk.js",
+    "main.js.map": "/Personal-Website/static/js/main.895e7236.chunk.js.map",
     "runtime-main.js": "/Personal-Website/static/js/runtime-main.d74ea760.js",
     "runtime-main.js.map": "/Personal-Website/static/js/runtime-main.d74ea760.js.map",
     "static/css/2.b253a425.chunk.css": "/Personal-Website/static/css/2.b253a425.chunk.css",
@@ -14,14 +14,16 @@
     "static/css/2.b253a425.chunk.css.map": "/Personal-Website/static/css/2.b253a425.chunk.css.map",
     "static/css/main.4c2fabe9.chunk.css.map": "/Personal-Website/static/css/main.4c2fabe9.chunk.css.map",
     "static/js/2.c8c81397.chunk.js.LICENSE.txt": "/Personal-Website/static/js/2.c8c81397.chunk.js.LICENSE.txt",
+    "static/media/charizard-game-example.7aa185b5.mp4": "/Personal-Website/static/media/charizard-game-example.7aa185b5.mp4",
     "static/media/chat-system-AWS.7bf9dd58.mp4": "/Personal-Website/static/media/chat-system-AWS.7bf9dd58.mp4",
-    "static/media/font-awesome.css": "/Personal-Website/static/media/fontawesome-webfont.f691f37e.woff"
+    "static/media/font-awesome.css": "/Personal-Website/static/media/fontawesome-webfont.f691f37e.woff",
+    "static/media/warcraft-game-example.3b67e595.mp4": "/Personal-Website/static/media/warcraft-game-example.3b67e595.mp4"
   },
   "entrypoints": [
     "static/js/runtime-main.d74ea760.js",
     "static/css/2.b253a425.chunk.css",
     "static/js/2.c8c81397.chunk.js",
     "static/css/main.4c2fabe9.chunk.css",
-    "static/js/main.24e7b2f1.chunk.js"
+    "static/js/main.895e7236.chunk.js"
   ]
 }
