@@ -68,6 +68,31 @@ const ProjectPage = ({
         )}
       </Row>
 
+      {/* VIDEO EXAMPLES */}
+      {videos && (
+        <>
+          <Row className="row-padding" style={{ marginTop: 40 }}>
+            <h1 className="header-text">Video Examples</h1>
+          </Row>
+          <Row className="row-padding">
+            {videos.map((video, index) => {
+              return (
+                <Col key={index}>
+                  <p className="text-style-lg-italic">{video.name}</p>
+
+                  <ReactPlayer
+                    url={video.url}
+                    width="50%"
+                    height="80%"
+                    controls={true}
+                  />
+                </Col>
+              );
+            })}
+          </Row>
+        </>
+      )}
+
       {/* ABOUT THE PROJECT */}
       <Row className="row-padding">
         <h1 className="header-text">About The Project</h1>
@@ -158,31 +183,6 @@ const ProjectPage = ({
               </Row>
             );
           })}
-        </>
-      )}
-
-      {/* VIDEO EXAMPLES */}
-      {videos && (
-        <>
-          <Row className="row-padding" style={{ marginTop: 40 }}>
-            <h1 className="header-text">Video Examples</h1>
-          </Row>
-          <Row className="row-padding">
-            {videos.map((video, index) => {
-              return (
-                <Col key={index}>
-                  <p className="text-style-lg-italic">{video.name}</p>
-
-                  <ReactPlayer
-                    url={video.url}
-                    width="50%"
-                    height="80%"
-                    controls={true}
-                  />
-                </Col>
-              );
-            })}
-          </Row>
         </>
       )}
 
