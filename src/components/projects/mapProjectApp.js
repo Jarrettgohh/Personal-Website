@@ -76,9 +76,9 @@ function packages() {
   ];
 }
 
-function github() {
-  return [{ url: "https://github.com/Jarrettgohh/React-Native-App" }];
-}
+// function github() {
+//   return [{ url: "https://github.com/Jarrettgohh/React-Native-App" }];
+// }
 
 //eslint-disable-next-line
 export default {
@@ -88,6 +88,6 @@ export default {
   learnt,
   resources,
   tech,
-  github,
+  // github,
   packages,
 };

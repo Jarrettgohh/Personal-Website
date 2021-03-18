@@ -58,7 +58,7 @@ function App() {
               tech={mapProjectApp.tech()}
               resources={mapProjectApp.resources()}
               packages={mapProjectApp.packages()}
-              github={mapProjectApp.github()}
+              // github={mapProjectApp.github()}
             />
           </Route>
           <Route path="/projects/mini-games">
@@ -71,7 +71,7 @@ function App() {
               learnt={miniGames.learnt()}
               tech={miniGames.tech()}
               resources={miniGames.resources()}
-              github={miniGames.github()}
+              // github={miniGames.github()}
             />
           </Route>
           <Route path="/projects/simple-chat-system">

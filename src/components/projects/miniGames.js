@@ -96,9 +96,9 @@ function resources() {
   ];
 }
 
-function github() {
-  return [{ url: "https://github.com/Jarrettgohh" }];
-}
+// function github() {
+//   return [{ url: "https://github.com/Jarrettgohh" }];
+// }
 
 //eslint-disable-next-line
 export default {
@@ -109,5 +109,5 @@ export default {
   learnt,
   tech,
   resources,
-  github,
+  // github,
 };

@@ -41,7 +41,7 @@ const ProgrammingProjects = () => {
           <FaAws size="1.3rem" color="#AA9939" />
         </>
       ),
-      github: "https://github.com/Jarrettgohh/Jarrettgoh.github.io",
+      // github: "https://github.com/Jarrettgohh/Jarrettgoh.github.io",
     },
     {
       id: 3,
