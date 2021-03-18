@@ -24,9 +24,7 @@ On click of "soure code" in the projects card, under "Programming Projects", the
 ####
 Expected behavior ==> Open github repo, but page remains.
 
-####
-####
-Images not appearing when hosted on cloud with gh pages.
+
 
 
 
