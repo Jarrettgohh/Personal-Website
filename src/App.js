@@ -64,6 +64,7 @@ function App() {
           <Route path="/projects/mini-games">
             <ProjectPage
               note={miniGames.note()}
+              videos={miniGames.videos()}
               name="Mini Browser Games"
               // examples={miniGames.examples()}
               about={miniGames.about()}
@@ -77,6 +78,7 @@ function App() {
           <Route path="/projects/simple-chat-system">
             <ProjectPage
               note={chatSystem.note()}
+              videos={chatSystem.videos()}
               name="Chat System"
               examples={chatSystem.examples()}
               about={chatSystem.about()}
@@ -84,7 +86,6 @@ function App() {
               learnt={chatSystem.learnt()}
               tech={chatSystem.tech()}
               resources={chatSystem.resources()}
-              videos={chatSystem.videos()}
               // github={chatSystem.github()}
             />
           </Route>

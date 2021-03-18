@@ -4,6 +4,10 @@ function note() {
   return "The chat system for AWS project is an experiment, it may not work as expected sometimes. However a reload of the page should make it work, thank you! Do check out the video example at the bottom :) Due to some flaws for the Heroku version, it would not be shown yet.";
 }
 
+function videos() {
+  return [{ name: "Chat System With AWS", url: AWSVideo }];
+}
+
 function about() {
   return (
     <>
@@ -113,10 +117,6 @@ function resources() {
   ];
 }
 
-function videos() {
-  return [{ name: "Chat System With AWS", url: AWSVideo }];
-}
-
 // function github() {
 //   return [
 //     {
@@ -137,12 +137,12 @@ function videos() {
 //eslint-disable-next-line
 export default {
   note,
+  videos,
   about,
   examples,
   problems,
   learnt,
   tech,
   resources,
-  videos,
   // github,
 };

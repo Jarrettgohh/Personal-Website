@@ -1,5 +1,22 @@
+import CharizardGame from "../../videos/charizard-game-example.mp4";
+import WarcraftGame from "../../videos/warcraft-game-example.mp4";
+
 function note() {
   return "This was my first actual serious programming project that I have worked on, thus there may be some bad practices in the codes and other flaws too. Would add test and video examples soon ;)";
+}
+
+function videos() {
+  return [
+    {
+      name:
+        "Mini game example with pet Charizard and simple character movements :) Don't mind the failed attack from Charizard, where no fire came out (❁´◡`❁)",
+      url: CharizardGame,
+    },
+    {
+      name: "Mini game example of Warcraft II.",
+      url: WarcraftGame,
+    },
+  ];
 }
 
 function about() {
@@ -103,6 +120,7 @@ function resources() {
 //eslint-disable-next-line
 export default {
   note,
+  videos,
   about,
   // examples,
   problems,
