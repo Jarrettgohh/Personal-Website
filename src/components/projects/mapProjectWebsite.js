@@ -1,5 +1,5 @@
 function note() {
-  return "The activities shown on the website are not actual activites and are made up by me :) There may also be some missing features that are not yet added (Stated in github source README.MD) I have also experimented with building a marker clustering effect which would be added as a project soon!";
+  return "Due to some issues with the AWS server after I changed the access keys, it is now not working as expected (Event examples not shown). There may also be some missing features that are not yet added (Stated in github source README.MD) I have also experimented with building a marker clustering effect which would be added as a project soon!";
 }
 
 function about() {

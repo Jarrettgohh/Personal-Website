@@ -1,7 +1,7 @@
 import AWSVideo from "../../videos/chat-system-AWS.mp4";
 
 function note() {
-  return "The chat system for AWS project is an experiment, it may not work as expected sometimes. However a reload of the page should make it work, thank you! Do check out the video example at the bottom :) Due to some flaws for the Heroku version, it would not be shown yet.";
+  return "Due to some issues with the AWS Server after I changed the access keys, the service is not working as expected (To be fixed soon!). However, do check out the video example ;) ! Due to some flaws for the Heroku version, it would not be shown yet.";
 }
 
 function videos() {
