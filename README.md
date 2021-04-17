@@ -7,16 +7,12 @@ URL EXTENSION "/Personal-Website/" instead of "/Personal-Website" else image wou
 
 # TECHNOLOGY USED
 
-React Js is used for the frontend, while Node Js hosted with AWS Amplify is used for the backend. Bootstrap is used for the HTML & CSS designs.
+React Js is used for the frontend with Bootstrap being used for the HTML & CSS designs.
 
 # FEEDBACKS
 
 I would love & appreciate any feedbacks or improvements that could be made to my website; be it the design or code based. Thank You!
 
-
-# FEATURES TO ADD
-
-Source code and example for 'Mini Games' project.
 
 # CURRENT ISSUES
 
