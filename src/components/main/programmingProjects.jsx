@@ -5,13 +5,19 @@ import {
   FaPython,
   FaReact,
   FaNodeJs,
-  FaBootstrap,
+  // FaBootstrap,
   FaAws,
   FaHtml5,
   FaCss3,
   FaJs,
 } from "react-icons/fa";
-import { SiHeroku, SiSocketDotIo, SiExpo, SiMongodb } from "react-icons/si";
+import {
+  SiHeroku,
+  SiSocketDotIo,
+  // SiExpo,
+  SiMongodb,
+  SiRust,
+} from "react-icons/si";
 import { useHistory } from "react-router-dom";
 
 const ProgrammingProjects = () => {
@@ -27,35 +33,35 @@ const ProgrammingProjects = () => {
       github:
         "https://github.com/Jarrettgohh/Onepa-Badminton-Courts-Finder-Python",
     },
-    {
-      id: 2,
-      name: "Map Project Website",
-      description:
-        "Simple website project to allow users to place activities on maps!",
-      src: "Map.png",
-      stack: (
-        <>
-          <FaReact size="1.3rem" color="#08DDFA" />
-          <FaNodeJs size="1.3rem" color="green" />
-          <FaBootstrap size="1.3rem" color="purple" />
-          <FaAws size="1.3rem" color="#AA9939" />
-        </>
-      ),
-      // github: "https://github.com/Jarrettgohh/Jarrettgoh.github.io",
-    },
-    {
-      id: 3,
-      name: "Map Project App",
-      description: "Mobile App version of the map project website.",
-      src: "Map-App.png",
-      stack: (
-        <>
-          <SiExpo size="1.3rem" color="black" />
-          <FaReact size="1.3rem" color="#08DDFA" />
-          <FaNodeJs size="1.3rem" color="green" />
-        </>
-      ),
-    },
+    // {
+    //   id: 2,
+    //   name: "Map Project Website",
+    //   description:
+    //     "Simple website project to allow users to place activities on maps!",
+    //   src: "Map.png",
+    //   stack: (
+    //     <>
+    //       <FaReact size="1.3rem" color="#08DDFA" />
+    //       <FaNodeJs size="1.3rem" color="green" />
+    //       <FaBootstrap size="1.3rem" color="purple" />
+    //       <FaAws size="1.3rem" color="#AA9939" />
+    //     </>
+    //   ),
+    //   // github: "https://github.com/Jarrettgohh/Jarrettgoh.github.io",
+    // },
+    // {
+    //   id: 3,
+    //   name: "Map Project App",
+    //   description: "Mobile App version of the map project website.",
+    //   src: "Map-App.png",
+    //   stack: (
+    //     <>
+    //       <SiExpo size="1.3rem" color="black" />
+    //       <FaReact size="1.3rem" color="#08DDFA" />
+    //       <FaNodeJs size="1.3rem" color="green" />
+    //     </>
+    //   ),
+    // },
     {
       id: 4,
       name: "Mini Games",
@@ -101,6 +107,19 @@ const ProgrammingProjects = () => {
       ),
       github: "https://github.com/Jarrettgohh/Cool-Matrix-Stuff",
     },
+    {
+      id: 7,
+      name: "Journey of learning Rust!",
+      description: "My journey of learning Rust!",
+      src: "rust.png",
+      fullWidth: true,
+      stack: (
+        <>
+          <SiRust size="1.3rem" color="brown" />
+        </>
+      ),
+      github: "https://github.com/Jarrettgohh/learning_rust",
+    },
   ];
 
   const history = useHistory();
@@ -129,6 +148,9 @@ const ProgrammingProjects = () => {
 
       case 6:
         return "matrix-stuff";
+
+      case 7:
+        return "learn-rust";
 
       default:
         break;

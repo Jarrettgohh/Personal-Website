@@ -11,6 +11,7 @@ import mapProjectApp from "./components/projects/mapProjectApp";
 import miniGames from "./components/projects/miniGames";
 import chatSystem from "./components/projects/chatSystem";
 import matrixStuff from "./components/projects/matrixStuff";
+import learnRust from "./components/projects/learnRust";
 
 import "./css/main.css";
 
@@ -63,7 +64,7 @@ function App() {
           </Route>
           <Route path="/projects/mini-games">
             <ProjectPage
-              note={miniGames.note()}
+              // note={miniGames.note()}
               videos={miniGames.videos()}
               name="Mini Browser Games"
               // examples={miniGames.examples()}
@@ -80,7 +81,7 @@ function App() {
               note={chatSystem.note()}
               videos={chatSystem.videos()}
               name="Chat System"
-              examples={chatSystem.examples()}
+              // examples={chatSystem.examples()}
               about={chatSystem.about()}
               problems={chatSystem.problems()}
               learnt={chatSystem.learnt()}
@@ -99,6 +100,15 @@ function App() {
               tech={matrixStuff.tech()}
               resources={matrixStuff.resources()}
               github={matrixStuff.github()}
+            />
+          </Route>
+          <Route path="/projects/learn-rust">
+            <ProjectPage
+              name="Learning Rust"
+              about={learnRust.about()}
+              learnt={learnRust.learnt()}
+              resources={learnRust.resources()}
+              github={learnRust.github()}
             />
           </Route>
 

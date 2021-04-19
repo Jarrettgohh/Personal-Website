@@ -1,9 +1,9 @@
 import CharizardGame from "../../videos/charizard-game-example.mp4";
 import WarcraftGame from "../../videos/warcraft-game-example.mp4";
 
-function note() {
-  return "This was my first actual serious programming project that I have worked on, thus there may be some bad practices in the codes and other flaws too. Would add test and video examples soon ;)";
-}
+// function note() {
+//   return "This was my first actual serious programming project that I have worked on, thus there may be some bad practices in the codes and other flaws too. Would add test and video examples soon ;)";
+// }
 
 function videos() {
   return [
@@ -119,7 +119,7 @@ function resources() {
 
 //eslint-disable-next-line
 export default {
-  note,
+  // note,
   videos,
   about,
   // examples,

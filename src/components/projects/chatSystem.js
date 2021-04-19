@@ -31,14 +31,14 @@ function about() {
   );
 }
 
-function examples() {
-  return [
-    {
-      name: "Chat System AWS",
-      url: "https://master.d2aw5uc742d1w4.amplifyapp.com/",
-    },
-  ];
-}
+// function examples() {
+//   return [
+//     {
+//       name: "Chat System AWS",
+//       url: "https://master.d2aw5uc742d1w4.amplifyapp.com/",
+//     },
+//   ];
+// }
 
 function problems() {
   return (
@@ -139,7 +139,7 @@ export default {
   note,
   videos,
   about,
-  examples,
+  // examples,
   problems,
   learnt,
   tech,

@@ -110,28 +110,31 @@ const ProjectPage = ({
       <Row className="row-padding">{learnt}</Row>
 
       {/* TECH STACK */}
-      <Row className="row-padding">
-        <h1 className="header-text">Tech Stack</h1>
-      </Row>
-      <Row className="row-padding">
-        <Col>
-          {tech &&
-            tech.map((stack, index) => {
-              return (
-                <Row key={index} style={{ width: "30vw" }}>
-                  <Col xs={1} xl={1}>
-                    <FontAwesomeIcon icon={faCheck} color="lime" />
-                  </Col>
-                  <Col xs={11} xl={11}>
-                    <p className="text-style">
-                      <strong>{stack}</strong>
-                    </p>
-                  </Col>
-                </Row>
-              );
-            })}
-        </Col>
-      </Row>
+      {tech && (
+        <>
+          <Row className="row-padding">
+            <h1 className="header-text">Tech Stack</h1>
+          </Row>
+          <Row className="row-padding">
+            <Col>
+              {tech.map((stack, index) => {
+                return (
+                  <Row key={index} style={{ width: "30vw" }}>
+                    <Col xs={1} xl={1}>
+                      <FontAwesomeIcon icon={faCheck} color="lime" />
+                    </Col>
+                    <Col xs={11} xl={11}>
+                      <p className="text-style">
+                        <strong>{stack}</strong>
+                      </p>
+                    </Col>
+                  </Row>
+                );
+              })}
+            </Col>
+          </Row>
+        </>
+      )}
 
       {/* LEARNING RESOURCES */}
       <Row className="row-padding">
