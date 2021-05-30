@@ -2,6 +2,9 @@
 
 Personal website to showcase my current & future projects with source codes for some.
 
+# FEATURE IDEAS
+- Add 'forums' at the bottom of each project pages; something for visitors to leave comments or discuss an issue.
+
 # TO NOTE 
 URL EXTENSION "/Personal-Website/" instead of "/Personal-Website" else image would not load.
 
