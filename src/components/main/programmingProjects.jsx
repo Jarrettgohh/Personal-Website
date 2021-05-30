@@ -16,7 +16,7 @@ import {
   SiSocketDotIo,
   // SiExpo,
   SiMongodb,
-  SiRust,
+  // SiRust,
 } from "react-icons/si";
 import { useHistory } from "react-router-dom";
 
@@ -66,7 +66,7 @@ const ProgrammingProjects = () => {
       id: 4,
       name: "Mini Games",
       description: "Mini experimental games made on the browser!",
-      src: "Games.png",
+      src: "Games.PNG",
       stack: (
         <>
           <FaJs size="1.3rem" color="#FFD900" />
@@ -96,7 +96,7 @@ const ProgrammingProjects = () => {
       name: "Cool Matrix Stuff",
       description:
         "Binary Falling screen with different colors, and animated text!",
-      src: "Binary-Rain.png",
+      src: "Binary-Rain.PNG",
       fullWidth: true,
       stack: (
         <>
@@ -107,19 +107,19 @@ const ProgrammingProjects = () => {
       ),
       github: "https://github.com/Jarrettgohh/Cool-Matrix-Stuff",
     },
-    {
-      id: 7,
-      name: "Journey of learning Rust!",
-      description: "My journey of learning Rust!",
-      src: "rust.png",
-      fullWidth: true,
-      stack: (
-        <>
-          <SiRust size="1.3rem" color="brown" />
-        </>
-      ),
-      github: "https://github.com/Jarrettgohh/learning_rust",
-    },
+    // {
+    //   id: 7,
+    //   name: "Journey of learning Rust!",
+    //   description: "My journey of learning Rust!",
+    //   src: "rust.png",
+    //   fullWidth: true,
+    //   stack: (
+    //     <>
+    //       <SiRust size="1.3rem" color="brown" />
+    //     </>
+    //   ),
+    //   github: "https://github.com/Jarrettgohh/learning_rust",
+    // },
   ];
 
   const history = useHistory();
