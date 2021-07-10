@@ -1,23 +1,28 @@
 # Jarrett's Personal Website 
-
 Personal website to showcase my current & future projects with source codes for some.
 
 # FEATURE IDEAS
 - Add 'forums' at the bottom of each project pages; something for visitors to leave comments or discuss an issue.
+- To add category headers under the programming projects
+1. Automations
+2. Web App
+3. Mobile App Development
+4. Fun
 
-# TO NOTE 
+#
+#
+# To note
 URL EXTENSION "/Personal-Website/" instead of "/Personal-Website" else image would not load.
 
-# TECHNOLOGY USED
+# Technology used
 
 React Js is used for the frontend with Bootstrap being used for the HTML & CSS designs.
 
-# FEEDBACKS
-
+# Feedbacks
 I would love & appreciate any feedbacks or improvements that could be made to my website; be it the design or code based. Thank You!
 
 
-# CURRENT ISSUES
+# Current issues
 
 On click of "soure code" in the projects card, under "Programming Projects", the project page renders too. 
 ####
