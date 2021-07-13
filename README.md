@@ -9,7 +9,9 @@ Personal website to showcase my current & future projects with source codes for 
 3. Mobile App Development
 4. Fun
 
-- Add section in the main page of 'Future project ideas'
+- Possible section to add in the main page 
+1.  Future project ideas
+2.  Books reads -- What I learnt
 
 #
 #
