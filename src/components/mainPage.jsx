@@ -2,6 +2,7 @@ import React from "react";
 
 import AboutThisWebsite from "./main/aboutThisWebsite";
 import AboutMyself from "./main/aboutMyself";
+import InterestAIML from "./main/interestAIML";
 import ProgrammingProjects from "./main/programmingProjects";
 // import TechStack from "./main/techStack";
 // import FutureProjectIdeas from "./main/futureProjectIdeas";
@@ -17,6 +18,9 @@ const MainPage = () => {
 
       {/* ABOUT MYSELF */}
       <AboutMyself />
+
+      {/* INTEREST IN AI/ML */}
+      <InterestAIML />
 
       {/* PROGRAMMING PROJECTS */}
       <ProgrammingProjects />
