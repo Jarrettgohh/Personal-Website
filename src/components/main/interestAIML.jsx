@@ -22,8 +22,11 @@ export default function InterestAIML() {
       <Row className="row-padding">
         <p className="text-style">
           Through my exploration of AI/ML concepts in Tensorflow Keras, I have
-          learnt concepts of loss function (binary cross-entropy, sparse
-          categorical cross-entropy, ), model layers, activation function,{" "}
+          learnt of the multiple components that makes up the neural network
+          such as loss function (binary cross-entropy, categorical
+          cross-entropy), model layers (text vectorization ,LSTM, 1D
+          convolution, embedding) and activation function (rectified linear
+          unit, sigmoid, softmax).
         </p>
       </Row>
       <Row className="row-padding">
@@ -34,6 +37,32 @@ export default function InterestAIML() {
           business or anywhere that data is involved. On top of that, I have
           learnt about the categories of AI, namely supervised learning,
           unsupervised learning and reinforcement learning.
+        </p>
+      </Row>
+      <Row className="row-padding">
+        <p className="text-style">
+          Experiences I have working with Python includes automation and data
+          analysis. Related repositories in my Github profile (
+          <a
+            href="https://github.com/Jarrettgohh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://github.com/Jarrettgohh
+          </a>
+          ) includes <strong>Onepa-Badminton-Courts-Finder-Python</strong>,{" "}
+          <strong>python-cURL</strong> and{" "}
+          <strong>excel_data_automation</strong>. My machine learning projects
+          includes text classification with bag of words model and 1D
+          convolutional layers with text embedding for binary output
+          classifications and also for multiple classes/labels classifications.
+        </p>
+      </Row>
+      <Row className="row-padding">
+        <p className="text-style">
+          Despite being a beginner in AI/ML or the whole concept of data
+          science, I am willing to work hard to learn more about it, as I
+          believe it is the future!
         </p>
       </Row>
     </Container>
