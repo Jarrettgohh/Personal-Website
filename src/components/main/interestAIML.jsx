@@ -6,17 +6,20 @@ export default function InterestAIML() {
     <Container fluid className="container-style">
       <Row className="row-padding">
         <h1 className="header-text">
-          Interest in AI/ML (AI Singapore Application)
+          Interest in Artificial Intelligence/Machine Learning
         </h1>
       </Row>
       <Row className="row-padding">
         <p className="text-style">
-          I am currently working on a mobile app project with React Native.
-          However, the source code is private. At the same time, I am also
+          While working on a mobile app for my startup idea, I have realise the
+          importance of AI/ML integration to improve the business prospect.
+          Moreover, I am also really interested in this field, and am actively
           learning about the concepts of AI/ML to leverage the data I could
           potentially gather from the user base of my mobile app. I plan to use
           the data to build AI/ML models to improve my customer value capture
-          and creation.
+          and creation. From the various books I have read, I have learnt many
+          concepts on this field, and how other companies leverages their data
+          to improve their business as a whole.
         </p>
       </Row>
       <Row className="row-padding">
@@ -24,7 +27,7 @@ export default function InterestAIML() {
           Through my exploration of AI/ML concepts in Tensorflow Keras, I have
           learnt of the multiple components that makes up the neural network
           such as loss function (binary cross-entropy, categorical
-          cross-entropy), model layers (text vectorization ,LSTM, 1D
+          cross-entropy), model layers (text vectorization, LSTM, 1D
           convolution, embedding) and activation function (rectified linear
           unit, sigmoid, softmax).
         </p>
@@ -41,21 +44,11 @@ export default function InterestAIML() {
       </Row>
       <Row className="row-padding">
         <p className="text-style">
-          Experiences I have working with Python includes automation and data
-          analysis. Related repositories in my Github profile (
-          <a
-            href="https://github.com/Jarrettgohh"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://github.com/Jarrettgohh
-          </a>
-          ) includes <strong>Onepa-Badminton-Courts-Finder-Python</strong>,{" "}
-          <strong>python-cURL</strong> and{" "}
-          <strong>excel_data_automation</strong>. My machine learning projects
-          includes text classification with bag of words model and 1D
-          convolutional layers with text embedding for binary output
-          classifications and also for multiple classes/labels classifications.
+          During my internship experience at A*STAR IME, I was fortunate enough
+          to be able to work on computer automation projects to automate the
+          process of data extraction and compilation. The goal of the project
+          was to optimize and ease the process of data extraction/compilation,
+          so as to reduce human error, and overall improve efficiency.
         </p>
       </Row>
       <Row className="row-padding">
