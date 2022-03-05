@@ -6,7 +6,7 @@ const NavbarComponent = () => {
   return (
     <Navbar expand="lg" sticky="top" variant="dark" className="navbar-style">
       <Navbar.Brand href="/Personal-Website/" className="navbar-brand">
-        Jarrett Goh
+        Jarrett Goh Xiang Zheng
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

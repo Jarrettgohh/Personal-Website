@@ -84,7 +84,11 @@ const ProjectPage: FC<Props> = ({
             {examples.map((example, index) => {
               return (
                 <div key={index}>
-                  <FiLink size="1.2rem" color="gray" />
+                  <FiLink
+                    size="1.2rem"
+                    color="gray"
+                    style={{ marginRight: 6 }}
+                  />
                   <a
                     href={example.url}
                     style={{ cursor: "pointer" }}

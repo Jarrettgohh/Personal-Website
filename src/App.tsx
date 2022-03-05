@@ -57,6 +57,7 @@ function App() {
               problems={mapProjectApp.problems()}
               learnt={mapProjectApp.learnt()}
               tech={mapProjectApp.tech()}
+              examples={mapProjectApp.examples()}
               resources={mapProjectApp.resources()}
             />
           </Route>

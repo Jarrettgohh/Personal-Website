@@ -1,5 +1,5 @@
 function note() {
-  return "The Github page for this project is private, but a link is provided at the bottom to show my progress. Unforunately, the mobile app project can only be run on Android using the Expo Go app as of now.";
+  return "The Github page for this project is private, but a link is provided on the top to show a basic example. Unforunately, the mobile app project can only be run on Android using the Expo Go app as of now.";
 }
 
 function about() {
@@ -87,6 +87,15 @@ function tech() {
   ];
 }
 
+function examples() {
+  return [
+    {
+      name: "Expo app example - To be ran from Expo Go app",
+      url: "https://expo.dev/@jarrett_goh/mapitin-mobile-app?serviceType=classic&distribution=expo-go",
+    },
+  ];
+}
+
 function resources() {
   return [
     {
@@ -94,8 +103,12 @@ function resources() {
       url: "https://codewithmosh.com/p/the-ultimate-react-native-course",
     },
     {
-      name: "Expo.dev Documentations",
+      name: "Expo.dev Documentation",
       url: "https://docs.expo.dev/",
+    },
+    {
+      name: "React Navigation Documentation",
+      url: "https://reactnavigation.org/docs/getting-started/",
     },
   ];
 }
@@ -106,6 +119,7 @@ export default {
   about,
   problems,
   learnt,
-  resources,
   tech,
+  examples,
+  resources,
 };
