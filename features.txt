@@ -1,0 +1,2 @@
+1. TypeScript integration in this personal website project
+2. Mobile app project features with TS

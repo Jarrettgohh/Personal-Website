@@ -7,7 +7,7 @@ import ProjectPage from "./components/common/projectPage";
 
 import onePAProject from "./components/projects/onePAProject.js";
 import mapProjectWebsite from "./components/projects/mapProjectWebsite";
-import mapProjectApp from "./components/projects/mapProjectApp";
+import mapProjectApp from "./components/projects/mobileAppProject";
 import miniGames from "./components/projects/miniGames";
 import chatSystem from "./components/projects/chatSystem";
 import matrixStuff from "./components/projects/matrixStuff";
@@ -49,17 +49,15 @@ function App() {
               // github={mapProjectWebsite.github()}
             />
           </Route>
-          <Route path="/projects/map-project-app">
+          <Route path="/projects/mobile-app-project">
             <ProjectPage
+              name="Mobile App Project"
               note={mapProjectApp.note()}
-              name="Map Project App"
               about={mapProjectApp.about()}
               problems={mapProjectApp.problems()}
               learnt={mapProjectApp.learnt()}
               tech={mapProjectApp.tech()}
               resources={mapProjectApp.resources()}
-              packages={mapProjectApp.packages()}
-              // github={mapProjectApp.github()}
             />
           </Route>
           <Route path="/projects/mini-games">

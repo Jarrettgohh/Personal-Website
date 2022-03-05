@@ -19,11 +19,11 @@ const MainPage = () => {
       {/* ABOUT MYSELF */}
       <AboutMyself />
 
-      {/* INTEREST IN AI/ML */}
-      <InterestAIML />
-
       {/* PROGRAMMING PROJECTS */}
       <ProgrammingProjects />
+
+      {/* INTEREST IN AI/ML */}
+      <InterestAIML />
 
       {/* TECHSTACK*/}
       {/* <TechStack /> */}

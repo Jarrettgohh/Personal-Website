@@ -10,9 +10,9 @@ const AboutMyself = () => {
       </Row>
       <Row className="row-padding">
         <p className="text-style">
-          Hello! My name is Jarrett Goh Xiang Zheng and I am a student currently
-          taking a course in engineering of Nanotechnology & Materials Science
-          in Nanyang Polytechnic.
+          Hello! My name is Jarrett Goh Xiang Zheng and I am a graduate student
+          from Nanyang Polytechnic, Nanotechnology & Materials Science in the
+          School of Engineering.
         </p>
         <p className="text-style">
           During my free time, I love playing sports such as Badminton,

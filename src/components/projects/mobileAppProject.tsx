@@ -1,16 +1,38 @@
 function note() {
-  return "This project is not completed, as its a relatively new one and I'm still experimenting with it ;)";
+  return "The Github page for this project is private, but a link is provided at the bottom to show my progress. Unforunately, the mobile app project can only be run on Android using the Expo Go app as of now.";
 }
 
 function about() {
   return (
     <>
       <p className="text-style">
-        I started on this project in January-February of 2021 after learning
-        React Native from an online course. It was relatively easy for me to
-        learn React Native due to my background of Javascript and React. My plan
-        for this project is to better understand the workflows of mobile
-        development and the best practices involved.
+        I got an idea for a mobile app in January-February of 2021. However, due
+        to the lack of knowledge in app development, I was unable to immediately
+        start building the prototype. Prior to this, I was working on a web
+        development project, which involves server and cloud side development in
+        Node.js (Express.js) too. Thus, along with my Node.js server side
+        knowledge, I started to learn React Native for mobile app development.
+        The course I had enrolled in is Mosh's Ultimate React Native course (
+        <a
+          href="https://codewithmosh.com/p/the-ultimate-react-native-course"
+          target="_blank"
+          rel="noreferrer"
+        >
+          https://codewithmosh.com/p/the-ultimate-react-native-course
+        </a>
+        . The framework used in the course is Expo (
+        <a href="https://docs.expo.dev/" target="_blank" rel="noreferrer">
+          https://docs.expo.dev
+        </a>
+        ).
+      </p>
+      <p className="text-style">
+        Besides the course, I have also actively read documentations and
+        articles about various frameworks and concepts such as{" "}
+        <strong>React Navigation</strong>, <strong>custom React hooks</strong>,
+        and have been experimenting with other Expo libraries. My plan for this
+        project is to better understand the workflows of mobile development and
+        the best practices involved.
       </p>
     </>
   );
@@ -54,7 +76,15 @@ function learnt() {
 }
 
 function tech() {
-  return ["React Native", "Expo", "Node Js"];
+  return [
+    "TypeScript",
+    "React Native",
+    "Expo",
+    "Node.js (Express.js)",
+    "AWS DynamoDB",
+    "AWS S3",
+    "AWS Lambda",
+  ];
 }
 
 function resources() {
@@ -63,22 +93,12 @@ function resources() {
       name: "React Native Course",
       url: "https://codewithmosh.com/p/the-ultimate-react-native-course",
     },
-  ];
-}
-
-function packages() {
-  return [
     {
-      name: "RN-draggable-bottom-sheet",
-      url:
-        "https://www.npmjs.com/package/@react-native-tools/rn-draggable-bottom-sheet",
+      name: "Expo.dev Documentations",
+      url: "https://docs.expo.dev/",
     },
   ];
 }
-
-// function github() {
-//   return [{ url: "https://github.com/Jarrettgohh/React-Native-App" }];
-// }
 
 //eslint-disable-next-line
 export default {
@@ -88,6 +108,4 @@ export default {
   learnt,
   resources,
   tech,
-  // github,
-  packages,
 };

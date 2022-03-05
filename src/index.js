@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.css";
 import "./css/index.css";
 import "./css/fonts.css";
-import App from "./App";
+import App from "./App.tsx";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(

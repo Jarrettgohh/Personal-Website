@@ -102,13 +102,11 @@ function resources() {
   return [
     {
       name: "About AWS Websocket API Gateway",
-      url:
-        "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-overview.html",
+      url: "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-overview.html",
     },
     {
       name: "AWS ApiGateWayManagementAPI",
-      url:
-        "https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/ApiGatewayManagementApi.html",
+      url: "https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/ApiGatewayManagementApi.html",
     },
     {
       name: "Socket.io",

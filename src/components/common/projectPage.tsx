@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { FC, useEffect, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { GradeOutlined } from "@material-ui/icons";
 import { FaGithub } from "react-icons/fa";
@@ -8,7 +8,46 @@ import ReactPlayer from "react-player";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
-const ProjectPage = ({
+interface Example {
+  name: string;
+  url: string;
+}
+
+interface Resource {
+  name: string;
+  url: string;
+}
+
+interface Package {
+  name: string;
+  url: string;
+}
+
+interface Video {
+  name: string;
+  url: string;
+}
+
+interface Github {
+  name?: string;
+  url: string;
+}
+
+interface Props {
+  note?: string;
+  name: string;
+  examples?: Example[];
+  about: JSX.Element;
+  problems?: JSX.Element;
+  learnt?: JSX.Element;
+  tech?: string[];
+  resources?: Resource[];
+  packages?: Package[];
+  videos?: Video[];
+  github?: Github[];
+}
+
+const ProjectPage: FC<Props> = ({
   name,
   note,
   examples,
@@ -21,11 +60,11 @@ const ProjectPage = ({
   videos,
   github,
 }) => {
-  const topRow = useRef();
+  const topRow = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     // To make sure page starts from the top
-    topRow.current.scrollIntoView({ block: "end", behavior: "smooth" });
+    topRow.current?.scrollIntoView({ block: "end", behavior: "smooth" });
   }, []);
 
   return (
@@ -87,7 +126,7 @@ const ProjectPage = ({
         </>
       )}
 
-      {/* ABOUT THE PROJECT */}
+      {/* ABOUT: JSX.Element THE PROJECT */}
       <Row className="row-padding">
         <h1 className="header-text">About The Project</h1>
       </Row>
@@ -140,22 +179,24 @@ const ProjectPage = ({
       <Row className="row-padding">
         <h1 className="header-text">Learning Resources</h1>
       </Row>
-      {resources.map((resource, index) => {
-        return (
-          <Row key={index}>
-            <GradeOutlined style={{ fill: "#FADD08", fontSize: "2rem" }} />
-            <a
-              className="text-style-lg-italic"
-              style={{ cursor: "pointer" }}
-              target="_blank"
-              rel="noreferrer"
-              href={resource.url}
-            >
-              {resource.name}
-            </a>
-          </Row>
-        );
-      })}
+
+      {resources &&
+        resources.map((resource, index) => {
+          return (
+            <Row key={index}>
+              <GradeOutlined style={{ fill: "#FADD08", fontSize: "2rem" }} />
+              <a
+                className="text-style-lg-italic"
+                style={{ cursor: "pointer" }}
+                target="_blank"
+                rel="noreferrer"
+                href={resource.url}
+              >
+                {resource.name}
+              </a>
+            </Row>
+          );
+        })}
 
       {/* PUBLISHED PACKAGES */}
       {packages && (

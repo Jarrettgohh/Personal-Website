@@ -5,19 +5,12 @@ import {
   FaPython,
   FaReact,
   FaNodeJs,
-  // FaBootstrap,
   FaAws,
   FaHtml5,
   FaCss3,
   FaJs,
 } from "react-icons/fa";
-import {
-  SiHeroku,
-  SiSocketDotIo,
-  // SiExpo,
-  SiMongodb,
-  // SiRust,
-} from "react-icons/si";
+import { SiHeroku, SiSocketDotIo, SiExpo, SiMongodb } from "react-icons/si";
 import { useHistory } from "react-router-dom";
 
 const ProgrammingProjects = () => {
@@ -25,14 +18,20 @@ const ProgrammingProjects = () => {
   const ProjectData = [
     {
       id: 1,
-      name: "onePA Badminton Courts Automation",
+      name: "Mobile App Project",
       description:
-        "Python project using web scraping libraries to automate the boring stuff such as finding of badminton courts!",
-      src: "Web-Crawler.png",
-      stack: <FaPython size="1.3rem" color="#FAC308" />,
-      github:
-        "https://github.com/Jarrettgohh/Onepa-Badminton-Courts-Finder-Python",
+        "Mobile app project, with features such as map display, basic authentication and chat system.",
+      src: "Map-App.png",
+      stack: (
+        <>
+          <SiExpo size="1.3rem" color="black" />
+          <FaReact size="1.3rem" color="#08DDFA" />
+          <FaNodeJs size="1.3rem" color="green" />
+          <FaAws size="1.3rem" color="#AA9939" />
+        </>
+      ),
     },
+
     // {
     //   id: 2,
     //   name: "Map Project Website",
@@ -49,19 +48,16 @@ const ProgrammingProjects = () => {
     //   ),
     //   // github: "https://github.com/Jarrettgohh/Jarrettgoh.github.io",
     // },
-    // {
-    //   id: 3,
-    //   name: "Map Project App",
-    //   description: "Mobile App version of the map project website.",
-    //   src: "Map-App.png",
-    //   stack: (
-    //     <>
-    //       <SiExpo size="1.3rem" color="black" />
-    //       <FaReact size="1.3rem" color="#08DDFA" />
-    //       <FaNodeJs size="1.3rem" color="green" />
-    //     </>
-    //   ),
-    // },
+    {
+      id: 3,
+      name: "onePA Badminton Courts Automation",
+      description:
+        "Python project using web scraping libraries to automate the boring stuff such as finding of badminton courts!",
+      src: "Web-Crawler.png",
+      stack: <FaPython size="1.3rem" color="#FAC308" />,
+      github:
+        "https://github.com/Jarrettgohh/Onepa-Badminton-Courts-Finder-Python",
+    },
     {
       id: 4,
       name: "Mini Games",
@@ -132,13 +128,13 @@ const ProgrammingProjects = () => {
   const returnRouteURL = (id) => {
     switch (id) {
       case 1:
-        return "onepa-badminton-automation";
+        return "mobile-app-project";
 
       case 2:
         return "map-project-website";
 
       case 3:
-        return "map-project-app";
+        return "onepa-badminton-automation";
 
       case 4:
         return "mini-games";
